@@ -22,7 +22,7 @@ public class SpriteBehaviour : MonoBehaviour
         transform.LookAt(camera);
         getOrientation(Mathf.Round((cameraAnchor.eulerAngles.y - player.eulerAngles.y) / 45) * 45);
         updateAnimator();
-        updateFacing();
+        //updateFacing(); temporary disabling because of the ys sprite
     }
 
     //Gets the orientation of the player relevant to the camera via Euler angles. May not be the most performant solution.
@@ -49,15 +49,22 @@ public class SpriteBehaviour : MonoBehaviour
     //For updating the animator variables
     void updateAnimator()
     {
-        Debug.Log(orientation);
-
         if (orientation == Orientation.up)
             animator.SetInteger("orientation", 1);
-        else if (orientation == Orientation.upleft || orientation == Orientation.downleft || orientation == Orientation.left
-            || orientation == Orientation.upright || orientation == Orientation.downright || orientation == Orientation.right)
+        else if (orientation == Orientation.upright)
             animator.SetInteger("orientation", 2);
-        else if (orientation == Orientation.down)
+        else if (orientation == Orientation.right)
             animator.SetInteger("orientation", 3);
+        else if (orientation == Orientation.downright)
+            animator.SetInteger("orientation", 4);
+        else if (orientation == Orientation.down)
+            animator.SetInteger("orientation", 5);
+        else if (orientation == Orientation.downleft)
+            animator.SetInteger("orientation", 6);
+        else if (orientation == Orientation.left)
+            animator.SetInteger("orientation", 7);
+        else if (orientation == Orientation.upleft)
+            animator.SetInteger("orientation", 8);
     }
 
     //For flipping the sprite based on facing. 
