@@ -23,34 +23,26 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     public void Attack()
     {
-        //Only attacks if we are not cooling down from a previous attack.
-        if (!attackCooldown)
+        var collided = Physics.OverlapBox(attackCollider.bounds.center,
+                                        attackCollider.bounds.extents,
+                                        attackCollider.transform.rotation,
+                                        LayerMask.GetMask("Hitbox"));
+
+        foreach (Collider c in collided)
         {
-            var collided = Physics.OverlapBox(attackCollider.bounds.center,
-                                          attackCollider.bounds.extents,
-                                          attackCollider.transform.rotation,
-                                          LayerMask.GetMask("Hitbox"));
-
-            attackCooldown = true;
-            playerInput.playerState = PlayerInput.PlayerState.attacking;
-            StartCoroutine("playAnim");
-
-            foreach (Collider c in collided)
-            {
-                Debug.Log("Hitting: " + c.name);
-                c.attachedRigidbody.AddForce(transform.forward * attackForce);
-                c.attachedRigidbody.AddForce(transform.up * attackForce/2);
-            }
+            Debug.Log("Hitting: " + c.name);
+            c.attachedRigidbody.AddForce(transform.forward * attackForce);
+            c.attachedRigidbody.AddForce(transform.up * attackForce/2);
         }
     }
 
-    //Temporary to mock a hypothetical attack animation. 
-    IEnumerator playAnim()
+    public void enterAttackingState()
     {
-        for(int i = 0; i<2; i++)
-            yield return new WaitForSeconds(.1f);
+        playerInput.playerState = PlayerInput.PlayerState.attacking;
+    }
 
-        attackCooldown = false;
+    public void endAttackingState()
+    {
         playerInput.playerState = PlayerInput.PlayerState.idle;
     }
 }

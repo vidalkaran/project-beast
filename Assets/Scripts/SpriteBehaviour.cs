@@ -11,6 +11,9 @@ public class SpriteBehaviour : MonoBehaviour
     public Animator animator;
     public SpriteRenderer renderer;
 
+    //Dependant on attack script for now. When I abstract state out into a manager, this will reference to that manager. 
+    public PlayerCombat playerCombat;
+
     //Orientation enum
     public enum Orientation { up, upright, right, downright, down, downleft, left, upleft, none };
 
@@ -74,5 +77,17 @@ public class SpriteBehaviour : MonoBehaviour
             renderer.flipX = false;
         else if (orientation == Orientation.upleft || orientation == Orientation.downleft || orientation == Orientation.left)
             renderer.flipX = true;
+    }
+
+    //Probably temporary
+    void triggerAttack()
+    {
+        playerCombat.Attack();
+    }
+
+    //Probably temporary
+    void endAttack()
+    {
+        playerCombat.endAttackingState();
     }
 }

@@ -28,8 +28,8 @@ public class PlayerInput : MonoBehaviour
         playerMove.UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         //Combat
-        if(Input.GetKeyDown(KeyCode.Space))
-            playerCombat.Attack();
+        if (Input.GetKeyDown(KeyCode.Space))
+            playerCombat.enterAttackingState();
 
         //Camera
         if (Input.GetKey(KeyCode.Q))

@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &78726541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932703296325253278, guid: 05839dfd6558a264dbafb732b46e2b1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 788631332}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa51f9e87cb710b4aa1c0557f34ebc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &140973682
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +434,11 @@ PrefabInstance:
       propertyPath: cameraAnchor
       value: 
       objectReference: {fileID: 147470764}
+    - target: {fileID: 8932703297687989365, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: playerCombat
+      value: 
+      objectReference: {fileID: 78726541}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05839dfd6558a264dbafb732b46e2b1f, type: 3}
 --- !u!1 &963194225
@@ -628,7 +645,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14352
+  m_Name: pb_Mesh14888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

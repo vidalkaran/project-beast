@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(moveVector);
             playerInput.playerState = PlayerInput.PlayerState.walking;
         }
-        else
+        else if(playerInput.playerState != PlayerInput.PlayerState.attacking)
             playerInput.playerState = PlayerInput.PlayerState.idle;
     }
 
