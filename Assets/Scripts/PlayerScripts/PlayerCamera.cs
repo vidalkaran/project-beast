@@ -2,13 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerController))]
 public class PlayerCamera : MonoBehaviour
 {
     //Dependencies
-    public Transform cameraSmoother;
+    PlayerController playerController;
+
+    private void Awake()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
 
     public void Rotate(Vector3 dir)
     {
-        cameraSmoother.Rotate(dir, Space.World);
+        playerController.cameraSmoother.Rotate(dir, Space.World);
     }
+
+    //public void Shake()
+    //
 }

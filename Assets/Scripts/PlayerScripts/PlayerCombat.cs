@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerController))]
 public class PlayerCombat : MonoBehaviour
 {
     //Editor Dependencies
-    public GameObject attackObject;
-    public float attackForce;
-    public PlayerInput playerInput;
-    public Animator animator;
-    public Collider attackCollider;
-    public MeshRenderer mesh;
+    PlayerController playerController;
 
     //Variables
-    private bool attackCooldown = false;
+    public float attackForce;
+
+    private void Awake()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
 
     private void Start()
     {
-        mesh.enabled = false;
+        playerController.attackMesh.enabled = false;
     }
 
     // Start is called before the first frame update
     public void Attack()
     {
-        var collided = Physics.OverlapBox(attackCollider.bounds.center,
-                                        attackCollider.bounds.extents,
-                                        attackCollider.transform.rotation,
+        var collided = Physics.OverlapBox(playerController.attackCollider.bounds.center,
+                                        playerController.attackCollider.bounds.extents,
+                                        playerController.attackCollider.transform.rotation,
                                         LayerMask.GetMask("Hitbox"));
 
         foreach (Collider c in collided)
@@ -34,15 +35,5 @@ public class PlayerCombat : MonoBehaviour
             c.attachedRigidbody.AddForce(transform.forward * attackForce);
             c.attachedRigidbody.AddForce(transform.up * attackForce/2);
         }
-    }
-
-    public void enterAttackingState()
-    {
-        playerInput.playerState = PlayerInput.PlayerState.attacking;
-    }
-
-    public void endAttackingState()
-    {
-        playerInput.playerState = PlayerInput.PlayerState.idle;
     }
 }

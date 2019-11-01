@@ -2,37 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerController))]
 public class PlayerMove : MonoBehaviour
 {
     //Dependencies
-    public Rigidbody rigidBody;
-    public Transform cameraAnchor;
-    public PlayerInput playerInput;
+    PlayerController playerController;
 
     //Variables
     public float speed = 1f;
     private Vector3 moveVector;
 
+    private void Awake()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
+
     //Movement is handled in fixed update for collision
     private void FixedUpdate()
     {
-        rigidBody.MovePosition(transform.position + (moveVector * speed * Time.deltaTime));
+        if (playerController.playerState != ActorState.ATTACKING_STATE) //halt movement when attacking.
+            playerController.rigidBody.MovePosition(transform.position + (moveVector * speed * Time.deltaTime));
     }
 
     //Updates the moveVector that fixedUpdate checks.
     public void UpdateSpeed(float moveVert, float moveHorz)
     {
         //Use the camera anchor so player always move forward relative to camera.
-        moveVector = (cameraAnchor.right * moveVert) +(cameraAnchor.forward * moveHorz);
+        moveVector = (playerController.cameraAnchor.right * moveVert) +(playerController.cameraAnchor.forward * moveHorz);
 
         //Make sure the character always faces the last direction of movement and update state
         if (moveVector != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveVector);
-            playerInput.playerState = PlayerInput.PlayerState.walking;
+            playerController.playerState = ActorState.WALKING_STATE;
         }
-        else if(playerInput.playerState != PlayerInput.PlayerState.attacking)
-            playerInput.playerState = PlayerInput.PlayerState.idle;
+        else if(playerController.playerState != ActorState.ATTACKING_STATE)
+            playerController.playerState = ActorState.IDLE_STATE;
     }
 
 }
