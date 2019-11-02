@@ -6,6 +6,9 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     //Editor Dependencies
+    public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
+
+    //Auto load dependencies
     PlayerController playerController;
 
     //Variables
@@ -31,7 +34,10 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider c in collided)
         {
-            Debug.Log("Hitting: " + c.name);
+            c.GetComponent<Controller>().TriggerActorEvent(ActorEvent.HIT_EVENT); //For enemy to take damage.
+            playerController.TriggerActorEvent(ActorEvent.HIT_EVENT); //shake screen
+            Instantiate(HitEmitterPrefab, c.transform.position, c.transform.rotation);
+
             c.attachedRigidbody.AddForce(transform.forward * attackForce);
             c.attachedRigidbody.AddForce(transform.up * attackForce/2);
             c.transform.LookAt(transform);

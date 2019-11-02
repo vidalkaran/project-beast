@@ -9,16 +9,26 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    //Camera dependencies
+    //Manual dependencies
     public Transform cameraAnchor;
-    public Transform camera;
     public Transform cameraSmoother;
+    public Transform spriteContainer;
+
+    //Autofill Dependencies
+    [HideInInspector] public SpriteController spriteController;
+    [HideInInspector] public Transform mainCamera;
 
     //Vars
     public Orientation orientation;
     public ActorState state;
 
-    public virtual void TriggerAnimationEvent(AnimationEvent animationEvent)
+    public virtual void Awake()
+    {
+        spriteController = spriteContainer.GetComponent<SpriteController>();
+        mainCamera = cameraAnchor.GetComponentInChildren<Camera>().transform;
+    }
+
+    public virtual void TriggerActorEvent(ActorEvent animationEvent)
     {
         //To be overriden. 
     }

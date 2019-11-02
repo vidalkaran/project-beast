@@ -17,13 +17,13 @@ public class PlayerController : Controller
     [HideInInspector] public Rigidbody rigidBody;
 
     //Manually set these dependencies in the editor for now...
-    public SpriteController spriteController;
     public Collider attackCollider;
     public MeshRenderer attackMesh;
-    public Transform spriteContainer;
 
-    private void Awake()
+    public override void Awake()
     {
+        base.Awake();
+
         //Reference required dependencies
         playerMove = GetComponent<PlayerMove>();
         playerCamera = GetComponent<PlayerCamera>();
@@ -59,11 +59,13 @@ public class PlayerController : Controller
     }
 
     //Handle animation events from a nested spriteController
-    public override void TriggerAnimationEvent(AnimationEvent animationEvent)
+    public override void TriggerActorEvent(ActorEvent actorEvent)
     {
-        if (animationEvent == AnimationEvent.ATTACK_EVENT)
+        if (actorEvent == ActorEvent.ATTACK_EVENT)
             playerCombat.Attack();
-        else if (animationEvent == AnimationEvent.END_ATTACK_EVENT)
+        else if (actorEvent == ActorEvent.END_ATTACK_EVENT)
             state = ActorState.IDLE_STATE;
+        else if (actorEvent == ActorEvent.HIT_EVENT)
+            playerCamera.ShakeScreen();
     }
 }

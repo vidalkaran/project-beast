@@ -22,13 +22,13 @@ public class SpriteController : MonoBehaviour
        
     private void Awake()
     {
-        //controller = GetComponentInParent<Controller>();         //Need to find a better way of doing this :(
+        controller = GetComponentInParent<Controller>();         //Need to find a better way of doing this :(
         animator = GetComponent<Animator>();
     }
 
     void LateUpdate()
     {
-        transform.LookAt(controller.camera);
+        transform.LookAt(controller.mainCamera);
         SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
         UpdateAnimator();
     }
@@ -85,9 +85,9 @@ public class SpriteController : MonoBehaviour
             animator.SetInteger("orientation", 8);
     }
     
-    void TriggerAnimationEvent(string animationEvent)
+    void TriggerActorEvent(string actorEvent)
     {   
-        controller.TriggerAnimationEvent((AnimationEvent)System.Enum.Parse(typeof(AnimationEvent), animationEvent));
+        controller.TriggerActorEvent((ActorEvent)System.Enum.Parse(typeof(ActorEvent), actorEvent));
     }
 
     /*For flipping the sprite based on facing. Disabled for now.
