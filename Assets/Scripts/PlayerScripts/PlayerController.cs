@@ -8,7 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerCamera))]
 [RequireComponent(typeof(PlayerCombat))]
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : Controller
 {
     //Dependencies //Note, should eventually abstract this out to generic move classes at some point...
     [HideInInspector] public PlayerMove playerMove;
@@ -21,15 +21,6 @@ public class PlayerController : MonoBehaviour
     public Collider attackCollider;
     public MeshRenderer attackMesh;
     public Transform spriteContainer;
-
-    //Camera dependencies
-    public Transform cameraAnchor;
-    public Transform camera;
-    public Transform cameraSmoother;
-
-    //State enum
-    public ActorState playerState;
-    public Orientation orientation;
 
     private void Awake()
     {
@@ -47,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void GetInput()
     {
-        if (playerState != ActorState.ATTACKING_STATE)
+        if (state != ActorState.ATTACKING_STATE)
         {
             //Movement
             playerMove.UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -62,18 +53,17 @@ public class PlayerController : MonoBehaviour
         //Combat
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Debug.Log("TEST");
-            playerState = ActorState.ATTACKING_STATE;
+            state = ActorState.ATTACKING_STATE;
         }
 
     }
 
     //Handle animation events from a nested spriteController
-    public void TriggerAnimationEvent(AnimationEvent animationEvent)
+    public override void TriggerAnimationEvent(AnimationEvent animationEvent)
     {
         if (animationEvent == AnimationEvent.ATTACK_EVENT)
             playerCombat.Attack();
         else if (animationEvent == AnimationEvent.END_ATTACK_EVENT)
-            playerState = ActorState.IDLE_STATE;
+            state = ActorState.IDLE_STATE;
     }
 }

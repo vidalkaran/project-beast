@@ -14,7 +14,7 @@ using UnityEngine;
 public class SpriteController : MonoBehaviour
 {
     //Dependencies
-    PlayerController playerController;
+    public Controller controller;
     Animator animator;
 
     //Variables
@@ -22,14 +22,14 @@ public class SpriteController : MonoBehaviour
        
     private void Awake()
     {
-        playerController = GetComponentInParent<PlayerController>();
+        //controller = GetComponentInParent<Controller>();         //Need to find a better way of doing this :(
         animator = GetComponent<Animator>();
     }
 
     void LateUpdate()
     {
-        transform.LookAt(playerController.camera);
-        SetOrientation(Mathf.Round((playerController.cameraAnchor.eulerAngles.y - playerController.transform.eulerAngles.y) / 45) * 45);
+        transform.LookAt(controller.camera);
+        SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
         UpdateAnimator();
     }
 
@@ -53,17 +53,17 @@ public class SpriteController : MonoBehaviour
         else if (facing == 45 || facing == -315)
             spriteOrientation = Orientation.UPLEFT_ORIENTATION;
 
-        playerController.orientation = spriteOrientation;
+        controller.orientation = spriteOrientation;
     }
 
     void UpdateAnimator()
     {
         //Updating state
-        if (playerController.playerState == ActorState.IDLE_STATE)
+        if (controller.state == ActorState.IDLE_STATE)
             animator.SetInteger("state", 0);
-        else if (playerController.playerState == ActorState.WALKING_STATE)
+        else if (controller.state == ActorState.WALKING_STATE)
             animator.SetInteger("state", 1);
-        if (playerController.playerState == ActorState.ATTACKING_STATE)
+        if (controller.state == ActorState.ATTACKING_STATE)
             animator.SetInteger("state", 2);
 
         //Updating orientation
@@ -87,7 +87,7 @@ public class SpriteController : MonoBehaviour
     
     void TriggerAnimationEvent(string animationEvent)
     {   
-        playerController.TriggerAnimationEvent((AnimationEvent)System.Enum.Parse(typeof(AnimationEvent), animationEvent));
+        controller.TriggerAnimationEvent((AnimationEvent)System.Enum.Parse(typeof(AnimationEvent), animationEvent));
     }
 
     /*For flipping the sprite based on facing. Disabled for now.

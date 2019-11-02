@@ -34,6 +34,7 @@ public class PlayerCombat : MonoBehaviour
             Debug.Log("Hitting: " + c.name);
             c.attachedRigidbody.AddForce(transform.forward * attackForce);
             c.attachedRigidbody.AddForce(transform.up * attackForce/2);
+            c.transform.LookAt(transform);
         }
     }
 }

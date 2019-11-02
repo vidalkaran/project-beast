@@ -85,8 +85,7 @@ MonoBehaviour:
   playerCamera: {fileID: 6593114561659358305}
   playerCombat: {fileID: 6593114562547537469}
   rigidBody: {fileID: 6593114561659358308}
-  spriteBehaviour: {fileID: 0}
-  animator: {fileID: 1132586049075939811}
+  spriteController: {fileID: 0}
   attackCollider: {fileID: 6593114562102936923}
   attackMesh: {fileID: 6593114562102936922}
   spriteContainer: {fileID: 4090562279444875180}
@@ -316,7 +315,7 @@ GameObject:
   - component: {fileID: 1132586049075939811}
   - component: {fileID: 3431621241633688416}
   m_Layer: 0
-  m_Name: SpriteContainer
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,3 +415,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064d33e2bb49744a8dbe61cb19fa90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteOrientation: 0

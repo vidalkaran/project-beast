@@ -20,7 +20,7 @@ public class PlayerMove : MonoBehaviour
     //Movement is handled in fixed update for collision
     private void FixedUpdate()
     {
-        if (playerController.playerState != ActorState.ATTACKING_STATE) //halt movement when attacking.
+        if (playerController.state != ActorState.ATTACKING_STATE) //halt movement when attacking.
             playerController.rigidBody.MovePosition(transform.position + (moveVector * speed * Time.deltaTime));
     }
 
@@ -34,10 +34,10 @@ public class PlayerMove : MonoBehaviour
         if (moveVector != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveVector);
-            playerController.playerState = ActorState.WALKING_STATE;
+            playerController.state = ActorState.WALKING_STATE;
         }
-        else if(playerController.playerState != ActorState.ATTACKING_STATE)
-            playerController.playerState = ActorState.IDLE_STATE;
+        else if(playerController.state != ActorState.ATTACKING_STATE)
+            playerController.state = ActorState.IDLE_STATE;
     }
 
 }
