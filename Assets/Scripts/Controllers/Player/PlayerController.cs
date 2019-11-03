@@ -65,7 +65,5 @@ public class PlayerController : Controller
             playerCombat.Attack();
         else if (actorEvent == ActorEvent.END_ATTACK_EVENT)
             state = ActorState.IDLE_STATE;
-        else if (actorEvent == ActorEvent.HIT_EVENT)
-            playerCamera.ShakeScreen();
     }
 }

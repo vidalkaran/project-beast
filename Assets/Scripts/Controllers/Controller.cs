@@ -17,6 +17,7 @@ public class Controller : MonoBehaviour
     //Autofill Dependencies
     [HideInInspector] public SpriteController spriteController;
     [HideInInspector] public Transform mainCamera;
+    [HideInInspector] public BackLightScript backLight;
 
     //Vars
     public Orientation orientation;
@@ -26,6 +27,7 @@ public class Controller : MonoBehaviour
     {
         spriteController = spriteContainer.GetComponent<SpriteController>();
         mainCamera = cameraAnchor.GetComponentInChildren<Camera>().transform;
+        backLight = GetComponentInChildren<BackLightScript>();
     }
 
     public virtual void TriggerActorEvent(ActorEvent animationEvent)

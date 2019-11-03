@@ -225,7 +225,7 @@ Transform:
   m_Children:
   - {fileID: 2447214370980550922}
   - {fileID: 2447214371403006894}
-  - {fileID: 2125868498010447873}
+  - {fileID: 6508713339378880921}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -271,13 +271,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraAnchor: {fileID: 0}
-  camera: {fileID: 0}
   cameraSmoother: {fileID: 0}
-  spriteController: {fileID: 2447214370980550921}
   spriteContainer: {fileID: 2447214370980550922}
+  spriteController: {fileID: 2447214370980550921}
+  mainCamera: {fileID: 0}
+  backLight: {fileID: 0}
   orientation: 0
   state: 0
---- !u!1001 &2447214370898572235
+--- !u!1001 &7360362763480105555
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -287,7 +288,7 @@ PrefabInstance:
     - target: {fileID: 4356910085653976009, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
         type: 3}
       propertyPath: m_Name
-      value: LampPrefab
+      value: ActorBackLight
       objectReference: {fileID: 0}
     - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
         type: 3}
@@ -344,16 +345,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4356910086521622688, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28dfeb4e74f97964098c4f4e1551bcd9, type: 3}
---- !u!4 &2125868498010447873 stripped
+--- !u!4 &6508713339378880921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
     type: 3}
-  m_PrefabInstance: {fileID: 2447214370898572235}
+  m_PrefabInstance: {fileID: 7360362763480105555}
   m_PrefabAsset: {fileID: 0}

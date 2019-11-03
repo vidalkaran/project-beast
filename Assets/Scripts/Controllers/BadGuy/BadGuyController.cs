@@ -15,6 +15,8 @@ public class BadGuyController : Controller
     public override void TriggerActorEvent(ActorEvent actorEvent)
     {
         if (actorEvent == ActorEvent.HIT_EVENT)
+        {
             badGuyCombat.GetHit();
+        }
     }
 }

@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class BadGuyCombat : MonoBehaviour
 {
-    GameObject HitEmitterPrefab;
+    BadGuyController badGuyController;
+
+    private void Awake()
+    {
+
+    }
 
     public void GetHit()
     {
         Debug.Log("ya boi got hit");
     }
+
 }

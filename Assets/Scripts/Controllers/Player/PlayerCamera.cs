@@ -8,9 +8,6 @@ public class PlayerCamera : MonoBehaviour
     //Dependencies
     PlayerController playerController;
 
-    //vars
-    public float shakeConstant = .1f;
-
     private void Awake()
     {
         playerController = GetComponent<PlayerController>();
@@ -21,23 +18,19 @@ public class PlayerCamera : MonoBehaviour
         playerController.cameraSmoother.Rotate(dir, Space.World);
     }
 
-    public void ShakeScreen()
+    public void ShakeScreen(float mod)
     {
-        StartCoroutine("ShakeScreenCoroutine");
-        Debug.Log("Test1");
+        StartCoroutine(ShakeScreenCoroutine(mod));
     }
 
-    IEnumerator ShakeScreenCoroutine()
+    IEnumerator ShakeScreenCoroutine(float mod)
     {
-        float shake = shakeConstant;
-
-        while (shake > 0)
+        while (mod > 0)
         {
             playerController.cameraAnchor.localPosition = playerController.cameraAnchor.localPosition + Random.insideUnitSphere * .1f;
-            shake -= Time.deltaTime;
+            mod -= Time.deltaTime;
             yield return null;
         }
-
         playerController.cameraAnchor.localPosition = transform.localPosition;
     }
 }
