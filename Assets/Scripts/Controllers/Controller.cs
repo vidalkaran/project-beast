@@ -22,6 +22,8 @@ public class Controller : MonoBehaviour
     //Vars
     public Orientation orientation;
     public ActorState state;
+    public Transform target;
+    public Rigidbody myBody;
 
     public virtual void Awake()
     {

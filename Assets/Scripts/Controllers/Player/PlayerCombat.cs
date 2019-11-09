@@ -40,6 +40,7 @@ public class PlayerCombat : MonoBehaviour
             //Enemy
             c.GetComponent<Controller>().TriggerActorEvent(ActorEvent.HIT_EVENT); //For enemy to take damage... this isn't really good for now because it does not pass values...
             c.GetComponent<Controller>().backLight.IntensifyLight(intensifyTime, intensifyMod);
+            c.GetComponent<Controller>().target = this.transform;
 
             //Player
             playerController.playerCamera.ShakeScreen(shakeScreenMod);

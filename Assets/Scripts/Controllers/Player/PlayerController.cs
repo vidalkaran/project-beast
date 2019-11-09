@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Acting as a statecontroller AND input controller atm, will need to abstract this into two classes at some point.
-
 [RequireComponent(typeof(PlayerMove))]
 [RequireComponent(typeof(PlayerCamera))]
 [RequireComponent(typeof(PlayerCombat))]

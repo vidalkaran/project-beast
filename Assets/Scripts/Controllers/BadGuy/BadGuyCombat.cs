@@ -8,7 +8,7 @@ public class BadGuyCombat : MonoBehaviour
 
     private void Awake()
     {
-
+        badGuyController = GetComponent<BadGuyController>();
     }
 
     public void GetHit()
