@@ -205,7 +205,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15070
+  m_Name: pb_Mesh15082
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3460,6 +3460,16 @@ PrefabInstance:
       propertyPath: shakeScreenMod
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5617000381735142277, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: attackWindup
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617000381735142277, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: attackCooldown
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5617000380642435786, guid: 05839dfd6558a264dbafb732b46e2b1f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3494,6 +3504,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617000381299576953, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617000381299576953, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617000381299576953, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617000381299576953, guid: 05839dfd6558a264dbafb732b46e2b1f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05839dfd6558a264dbafb732b46e2b1f, type: 3}

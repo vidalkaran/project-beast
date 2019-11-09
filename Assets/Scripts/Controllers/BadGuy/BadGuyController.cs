@@ -14,7 +14,7 @@ public class BadGuyController : Controller
     {
         base.Awake();
         badGuyCombat = GetComponent<BadGuyCombat>();
-        myBody = GetComponent<Rigidbody>();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -31,7 +31,7 @@ public class BadGuyController : Controller
             case BadGuyState.CHASE:
             {
                 transform.LookAt(target);
-                myBody.MovePosition(transform.localPosition+ (transform.forward * 1.5f * Time.deltaTime));
+                rigidBody.MovePosition(transform.localPosition+ (transform.forward * 1.5f * Time.deltaTime));
 
                 if (Vector3.Distance(transform.position, target.position) < .5f)
                 {
@@ -45,14 +45,6 @@ public class BadGuyController : Controller
             {
                 break;
             }
-        }
-    }
-
-    public override void TriggerActorEvent(ActorEvent actorEvent)
-    {
-        if (actorEvent == ActorEvent.HIT_EVENT)
-        {
-            badGuyCombat.GetHit();
         }
     }
 

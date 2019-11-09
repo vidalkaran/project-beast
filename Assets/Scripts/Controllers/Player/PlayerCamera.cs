@@ -2,20 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerController))]
-public class PlayerCamera : MonoBehaviour
+public class PlayerCamera : PlayerComponent
 {
-    //Dependencies
-    PlayerController playerController;
-
-    private void Awake()
-    {
-        playerController = GetComponent<PlayerController>();
-    }
-
     public void Rotate(Vector3 dir)
     {
-        playerController.cameraSmoother.Rotate(dir, Space.World);
+        controller.cameraSmoother.Rotate(dir, Space.World);
     }
 
     public void ShakeScreen(float mod)
@@ -27,10 +18,10 @@ public class PlayerCamera : MonoBehaviour
     {
         while (mod > 0)
         {
-            playerController.cameraAnchor.localPosition = playerController.cameraAnchor.localPosition + Random.insideUnitSphere * .1f;
+            controller.cameraAnchor.localPosition = controller.cameraAnchor.localPosition + Random.insideUnitSphere * .1f;
             mod -= Time.deltaTime;
             yield return null;
         }
-        playerController.cameraAnchor.localPosition = transform.localPosition;
+        controller.cameraAnchor.localPosition = transform.localPosition;
     }
 }

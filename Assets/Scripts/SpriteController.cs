@@ -28,9 +28,17 @@ public class SpriteController : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.LookAt(controller.mainCamera);
-        SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
-        UpdateAnimator();
+        //For debugging
+        if (controller == null)
+        {
+            Debug.LogError("SPRITE CONTROLLER CAN'T FIND A CONTROLLER", this);
+        }
+        else
+        {
+            transform.LookAt(controller.mainCamera);
+            SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
+            UpdateAnimator();
+        }
     }
 
     //Gets the orientation of the player relevant to the camera via Euler angles. May not be the most performant solution.
@@ -85,11 +93,6 @@ public class SpriteController : MonoBehaviour
             animator.SetInteger("orientation", 8);
     }
     
-    void TriggerActorEvent(string actorEvent)
-    {   
-        controller.TriggerActorEvent((ActorEvent)System.Enum.Parse(typeof(ActorEvent), actorEvent));
-    }
-
     /*For flipping the sprite based on facing. Disabled for now.
     void updateFacing()
     {
