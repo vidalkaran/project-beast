@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * Base Controller class
+ * Base Actor class
  * all unique actor controllers, like input and AI controllers, should inhereit this.
  */
 
-public class Controller : MonoBehaviour
+public class Actor : MonoBehaviour
 {
     //Manual dependencies
     public Transform cameraAnchor;
@@ -20,16 +20,13 @@ public class Controller : MonoBehaviour
     [HideInInspector] public BackLightScript backLight;
 
     //Vars
-    [HideInInspector] public Orientation orientation;
-    [HideInInspector] public ActorState state;
-    [HideInInspector] public Rigidbody rigidBody;
-
-    //temp
+    public Orientation orientation;
+    public ActorState state;
     public Transform target;
+    public Rigidbody rigidBody;
 
     public virtual void Awake()
     {
-        rigidBody = GetComponent<Rigidbody>();
         spriteController = spriteContainer.GetComponent<SpriteController>();
         mainCamera = cameraAnchor.GetComponentInChildren<Camera>().transform;
         backLight = GetComponentInChildren<BackLightScript>();

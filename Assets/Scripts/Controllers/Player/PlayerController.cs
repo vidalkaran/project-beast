@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Acting as a statecontroller AND input controller atm, will need to abstract this into two classes at some point.
-[RequireComponent(typeof(PlayerMove))]
-[RequireComponent(typeof(PlayerCamera))]
-[RequireComponent(typeof(PlayerCombat))]
-[RequireComponent(typeof(Rigidbody))]
+//Acting as a statecontroller AND input controller atm, will need to abstract this into two classes at some point... or maybe not?
 public class PlayerController : Controller
 {
     //Dependencies //Note, should eventually abstract this out to generic move classes at some point...
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerCamera playerCamera;
     [HideInInspector] public PlayerCombat playerCombat;
-    [HideInInspector] public Rigidbody rigidBody;
 
     //Manually set these dependencies in the editor for now...
     public Collider attackCollider;
@@ -27,7 +22,6 @@ public class PlayerController : Controller
         playerMove = GetComponent<PlayerMove>();
         playerCamera = GetComponent<PlayerCamera>();
         playerCombat = GetComponent<PlayerCombat>();
-        rigidBody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -52,17 +46,7 @@ public class PlayerController : Controller
         //Combat
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            state = ActorState.ATTACKING_STATE;
-        }
-
-    }
-
-    //Handle animation events from a nested spriteController
-    public override void TriggerActorEvent(ActorEvent actorEvent)
-    {
-        if (actorEvent == ActorEvent.ATTACK_EVENT)
             playerCombat.Attack();
-        else if (actorEvent == ActorEvent.END_ATTACK_EVENT)
-            state = ActorState.IDLE_STATE;
-    }
+        }
+    } 
 }
