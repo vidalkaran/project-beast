@@ -2,11 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : PlayerComponent
+public class PlayerMoveState : PlayerStateBase
 {
     //Variables
     public float speed = 1f;
     private Vector3 moveVector;
+
+    public override void EnterState()
+    {
+        base.EnterState();
+        stateName = PlayerStateEnum.PLAYER_WALKING;
+    }
+
+    //Check input
+    private void Update()
+    {
+        UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        if (Input.GetKey(KeyCode.Z))
+            controller.SwitchState(PlayerStateEnum.PLAYER_ATTACKING);
+    }
 
     //Movement is handled in fixed update for collision
     private void FixedUpdate()
@@ -30,5 +45,4 @@ public class PlayerMove : PlayerComponent
         else if(controller.state != ActorState.ATTACKING_STATE)
             controller.state = ActorState.IDLE_STATE;
     }
-
 }

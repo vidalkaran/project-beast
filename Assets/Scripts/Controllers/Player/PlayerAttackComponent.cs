@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCombat : PlayerComponent
+public class PlayerAttackComponent : PlayerStateBase
 {
     //Editor Dependencies
     public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
@@ -15,9 +15,20 @@ public class PlayerCombat : PlayerComponent
     public float intensifyMod;
     public float shakeScreenMod;
 
+    public override void EnterState()
+    {
+        base.EnterState();
+        stateName = PlayerStateEnum.PLAYER_ATTACKING;
+    }
+
     private void Start()
     {
         controller.attackMesh.enabled = false; //Can remove this out when we delete the mesh
+    }
+
+    public void OnEnable()
+    {
+        Attack();
     }
 
     // Start is called before the first frame update

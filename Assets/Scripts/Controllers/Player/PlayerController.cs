@@ -2,51 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Acting as a statecontroller AND input controller atm, will need to abstract this into two classes at some point... or maybe not?
+//Note, this is a playerController designed to handle player control states, such as walking. 
+// Right now, it pulls double duty managing the input for camera and for sprites... we can abstract this all out to a manager at some point.
 public class PlayerController : Controller
 {
-    //Dependencies //Note, should eventually abstract this out to generic move classes at some point...
-    [HideInInspector] public PlayerMove playerMove;
-    [HideInInspector] public PlayerCamera playerCamera;
-    [HideInInspector] public PlayerCombat playerCombat;
-
     //Manually set these dependencies in the editor for now...
     public Collider attackCollider;
     public MeshRenderer attackMesh;
+
+    public PlayerStateBase currentState;
+
+    //Dependencies //Note, should eventually abstract this out to generic move classes at some point...
+    [HideInInspector] public PlayerIdleState playerIdle;
+    [HideInInspector] public PlayerMoveState playerMove;
+    [HideInInspector] public PlayerCameraController playerCamera;
+    [HideInInspector] public PlayerAttackComponent playerCombat;
+
+    Dictionary<PlayerStateEnum, PlayerStateBase> stateList = new Dictionary<PlayerStateEnum, PlayerStateBase>();
 
     public override void Awake()
     {
         base.Awake();
 
         //Reference required dependencies
-        playerMove = GetComponent<PlayerMove>();
-        playerCamera = GetComponent<PlayerCamera>();
-        playerCombat = GetComponent<PlayerCombat>();
+        playerMove = GetComponent<PlayerMoveState>();
+        playerCamera = GetComponent<PlayerCameraController>();
+        //playerCombat = GetComponent<PlayerAttackComponent>();
+
+        playerIdle = GetComponent<PlayerIdleState>();
+        stateList.Add(PlayerStateEnum.PLAYER_IDLE, playerIdle);
+        currentState = playerIdle;
+
+        playerMove = GetComponent<PlayerMoveState>();
+        stateList.Add(PlayerStateEnum.PLAYER_WALKING, playerMove);
+        playerMove.ExitState();
+
+        playerCombat = GetComponent<PlayerAttackComponent>();
+        stateList.Add(PlayerStateEnum.PLAYER_ATTACKING, playerCombat);
+        playerCombat.ExitState();
     }
 
-    void Update()
+    public void SwitchState(PlayerStateEnum stateToEnter)
     {
-        GetInput(); //Check for input
+        if (stateToEnter != currentState.stateName)
+        {
+            currentState.ExitState();
+            stateList[stateToEnter].EnterState();
+        }
     }
-
-    void GetInput()
-    {
-        if (state != ActorState.ATTACKING_STATE)
-        {
-            //Movement
-            playerMove.UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-            //Camera
-            if (Input.GetKey(KeyCode.Q))
-                playerCamera.Rotate(Vector3.up);
-            if (Input.GetKey(KeyCode.E))
-                playerCamera.Rotate(Vector3.down);
-        }
-
-        //Combat
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            playerCombat.Attack();
-        }
-    } 
 }
+

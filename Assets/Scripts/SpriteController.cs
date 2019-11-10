@@ -9,7 +9,6 @@ using UnityEngine;
  *  - The animator is on the nested sprite object. 
  */
 
-[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
 public class SpriteController : MonoBehaviour
 {
@@ -22,7 +21,6 @@ public class SpriteController : MonoBehaviour
        
     private void Awake()
     {
-        controller = GetComponentInParent<Controller>();         //Need to find a better way of doing this :(
         animator = GetComponent<Animator>();
     }
 

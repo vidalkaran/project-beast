@@ -10,9 +10,8 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     //Manual dependencies
-    public Transform cameraAnchor;
-    public Transform cameraSmoother;
-    public Transform spriteContainer;
+    [HideInInspector] public Transform cameraAnchor;
+    [HideInInspector] public Transform cameraSmoother;
 
     //Autofill Dependencies
     [HideInInspector] public SpriteController spriteController;
@@ -27,10 +26,14 @@ public class Controller : MonoBehaviour
     //temp
     public Transform target;
 
+
+    //Would be nice to delegate this to a game controller at some point...
     public virtual void Awake()
     {
+        cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor").transform;
+        cameraSmoother = GameObject.FindGameObjectWithTag("CameraSmoother").transform;
+
         rigidBody = GetComponent<Rigidbody>();
-        spriteController = spriteContainer.GetComponent<SpriteController>();
         mainCamera = cameraAnchor.GetComponentInChildren<Camera>().transform;
         backLight = GetComponentInChildren<BackLightScript>();
     }

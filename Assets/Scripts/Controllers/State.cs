@@ -5,7 +5,7 @@ using UnityEngine;
 public class State
 {
     public Controller controller;
-    public StateEnum stateName;
+    public PlayerStateEnum stateName;
 
     public virtual void EnterState()
     {

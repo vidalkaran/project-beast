@@ -1,4 +1,4 @@
-﻿public enum StateEnum
+﻿public enum PlayerStateEnum
 { 
     //Player
     PLAYER_IDLE,
@@ -6,8 +6,4 @@
     PLAYER_ATTACKING,
     PLAYER_DODGING,
     PLAYER_PARRYING,
-       
-    //Badguy
-    BADGUY_IDLE,
-    BADGUY_CHASE
 }
