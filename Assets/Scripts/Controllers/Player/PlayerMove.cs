@@ -30,5 +30,4 @@ public class PlayerMove : PlayerComponent
         else if(controller.state != ActorState.ATTACKING_STATE)
             controller.state = ActorState.IDLE_STATE;
     }
-
 }

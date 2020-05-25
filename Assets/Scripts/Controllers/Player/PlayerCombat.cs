@@ -36,10 +36,6 @@ public class PlayerCombat : PlayerComponent
 
         foreach (Collider c in collided)
         {
-            //Enemy
-            c.GetComponent<Controller>().backLight.IntensifyLight(intensifyTime, intensifyMod);
-            c.GetComponent<Controller>().target = this.transform;
-
             //Player
             controller.playerCamera.ShakeScreen(shakeScreenMod);
             Instantiate(HitEmitterPrefab, c.transform.position, c.transform.rotation);
@@ -48,6 +44,10 @@ public class PlayerCombat : PlayerComponent
             c.attachedRigidbody.AddForce(transform.forward * attackForce);
             c.attachedRigidbody.AddForce(transform.up * 100); //Hard code 100 for now
             c.transform.LookAt(transform);
+
+            //Enemy
+            c.GetComponent<Controller>().backLight.IntensifyLight(intensifyTime, intensifyMod);
+            c.GetComponent<Controller>().Dead();
         }
     }
 

@@ -47,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -161,6 +162,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -271,14 +273,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2ef5ee258639349a4056f7332708f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraAnchor: {fileID: 0}
-  cameraSmoother: {fileID: 0}
-  spriteContainer: {fileID: 2447214370980550922}
   spriteController: {fileID: 2447214370980550921}
   mainCamera: {fileID: 0}
   backLight: {fileID: 0}
+  cameraAnchor: {fileID: 0}
+  cameraSmoother: {fileID: 0}
+  spriteContainer: {fileID: 2447214370980550922}
   orientation: 0
   state: 0
+  rigidBody: {fileID: 0}
+  target: {fileID: 0}
+  HitEmitterPrefab: {fileID: 6610614278519045816, guid: 37348d217e00efe4385630c536ae89e7,
+    type: 3}
+  speed: 3
 --- !u!1 &8244844546670610751
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7732109871427551592
 Transform:
   m_ObjectHideFlags: 0
@@ -334,6 +341,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
