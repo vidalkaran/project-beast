@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PlayerCombat : PlayerComponent
 {
+    //Design thoughts
+    //To extend this to multiple attacks and combos, should create an "AttackObject" that holds the attack force, windup, cooldown, ect, and belongs to the hitbox/mesh gameobject, 
+    //and have this script reference it and act as a middleman between the attack object and the playercontroller.
+
     //Editor Dependencies
     public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
+    public MeshRenderer attackMesh; //The hitbox of this attack.
 
     //Variables
     public float attackForce;
@@ -17,7 +22,7 @@ public class PlayerCombat : PlayerComponent
 
     private void Start()
     {
-        controller.attackMesh.enabled = false; //Can remove this out when we delete the mesh
+        attackMesh.enabled = false; //Can remove this out when we delete the mesh
     }
 
     // Start is called before the first frame update
@@ -47,7 +52,7 @@ public class PlayerCombat : PlayerComponent
 
             //Enemy
             c.GetComponent<Controller>().backLight.IntensifyLight(intensifyTime, intensifyMod);
-            c.GetComponent<Controller>().Dead();
+            c.GetComponent<Controller>().TakeDamage(1);
         }
     }
 

@@ -12,7 +12,6 @@ public class PlayerController : Controller
 
     //Manually set these dependencies in the editor for now...
     public Collider attackCollider;
-    public MeshRenderer attackMesh;
 
     public override void Awake()
     {
@@ -22,14 +21,41 @@ public class PlayerController : Controller
         playerMove = GetComponent<PlayerMove>();
         playerCamera = GetComponent<PlayerCamera>();
         playerCombat = GetComponent<PlayerCombat>();
+        health = 99;
     }
 
     void Update()
     {
-        GetInput(); //Check for input
+        switch(state)
+        {
+            case ActorState.IDLE_STATE:
+            {
+                HandleInput();
+                break;
+            }
+            case ActorState.WALKING_STATE:
+            {
+                HandleInput();
+                break;
+            }
+            case ActorState.STUNNED_STATE:
+            {
+                StartCoroutine("Stunned"); //Returns to idle state when done.
+                break;
+            }
+            case ActorState.ATTACKING_STATE:
+            {
+                //Nothing Yet. Can be used for combos later. 
+                break;
+            }
+            //Todo
+            //Add a dodge and parry state.
+        }
     }
 
-    void GetInput()
+
+
+    void HandleInput()
     {
         if (state != ActorState.ATTACKING_STATE)
         {

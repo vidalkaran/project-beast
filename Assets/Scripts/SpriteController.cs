@@ -37,7 +37,8 @@ public class SpriteController : MonoBehaviour
         {
             transform.LookAt(controller.mainCamera);
             SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
-            UpdateAnimator();
+            UpdateOrientation();
+            UpdateState();
         }
     }
 
@@ -64,16 +65,8 @@ public class SpriteController : MonoBehaviour
         controller.orientation = spriteOrientation;
     }
 
-    void UpdateAnimator()
+    void UpdateOrientation()
     {
-        //Updating state
-        if (controller.state == ActorState.IDLE_STATE)
-            animator.SetInteger("state", 0);
-        else if (controller.state == ActorState.WALKING_STATE)
-            animator.SetInteger("state", 1);
-        if (controller.state == ActorState.ATTACKING_STATE)
-            animator.SetInteger("state", 2);
-
         //Updating orientation
         if (spriteOrientation == Orientation.UP_ORIENTATION)
             animator.SetInteger("orientation", 1);
@@ -92,7 +85,20 @@ public class SpriteController : MonoBehaviour
         else if (spriteOrientation == Orientation.UPLEFT_ORIENTATION)
             animator.SetInteger("orientation", 8);
     }
-    
+
+    void UpdateState()
+    {
+        //Updating state
+        if (controller.state == ActorState.IDLE_STATE)
+            animator.SetInteger("state", 0);
+        else if (controller.state == ActorState.WALKING_STATE)
+            animator.SetInteger("state", 1);
+        else if(controller.state == ActorState.ATTACKING_STATE)
+            animator.SetInteger("state", 2);
+        else if (controller.state == ActorState.STUNNED_STATE)
+            animator.SetInteger("state", 0);
+    }
+
     /*For flipping the sprite based on facing. Disabled for now.
     void updateFacing()
     {

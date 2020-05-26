@@ -24,6 +24,8 @@ public class Controller : MonoBehaviour
     [HideInInspector] public ActorState state;
     [HideInInspector] public Rigidbody rigidBody;
 
+    public float health = 0f;
+
     //temp
     public Transform target;
 
@@ -38,8 +40,24 @@ public class Controller : MonoBehaviour
         backLight = GetComponentInChildren<BackLightScript>();
     }
 
-    public void Dead()
+    public void TakeDamage(float damage)
     {
-        Destroy(gameObject);
+        StopCoroutine("Stunned");
+
+        health -= 1;
+        state = ActorState.STUNNED_STATE;
+
+        if (health <= 0)
+        {
+            Debug.Log(gameObject.name + " has died");
+            Destroy(gameObject);
+        }
+    }
+
+    public IEnumerator Stunned()
+    {
+        yield return new WaitForSeconds(.75f);
+        state = ActorState.IDLE_STATE;
+        StopCoroutine("Stunned");
     }
 }

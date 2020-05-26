@@ -5,7 +5,6 @@ using UnityEngine;
 public class BadGuyController : Controller
 {
     //To refactor out at some point
-    BadGuyState newState = BadGuyState.IDLE;
     public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
 
     //Components
@@ -19,20 +18,22 @@ public class BadGuyController : Controller
         badGuyCombat = GetComponent<BadGuyCombat>();
         rigidBody = GetComponent<Rigidbody>();
         target = GameObject.FindWithTag("Player").transform;
+        health = 2;
+        state = ActorState.IDLE_STATE;
     }
 
     void Update()
     {
-        switch (newState)
+        switch (state)
         {
-            case BadGuyState.IDLE:
+            case ActorState.IDLE_STATE:
             {
-                if (target != null && Vector3.Distance(transform.position, target.position) > 1f)
-                    newState = BadGuyState.CHASE;
+                if (target != null && Vector3.Distance(transform.position, target.position) > 0f)
+                        state = ActorState.WALKING_STATE;
 
                 break;
             }
-            case BadGuyState.CHASE:
+            case ActorState.WALKING_STATE:
             {
                 if(target)
                 {
@@ -40,14 +41,17 @@ public class BadGuyController : Controller
                     rigidBody.MovePosition(transform.localPosition + (transform.forward * speed * Time.deltaTime));
                 }
                 else
-                   newState = BadGuyState.IDLE;
-
-
-                //if (Vector3.Distance(transform.position, target.position) < .5f)
-                //{
-                //    newState = BadGuyState.IDLE;
-                //}
-
+                        state = ActorState.IDLE_STATE;
+                break;
+            }
+            case ActorState.ATTACKING_STATE:
+            {
+                StartCoroutine(Stunned());
+                break;
+            }
+            case ActorState.STUNNED_STATE:
+            {
+                StartCoroutine(Stunned());
                 break;
             }
         }
@@ -57,15 +61,14 @@ public class BadGuyController : Controller
     {
         if (c.gameObject.tag == "Player")
         {
-            Instantiate(HitEmitterPrefab, c.transform.position, c.transform.rotation);
-            c.gameObject.GetComponent<PlayerController>().Dead();
-        }
-    }
+            state = ActorState.ATTACKING_STATE;
 
-    public enum BadGuyState
-    {
-        IDLE,
-        CHASE,
-        ATTACK,
+            Instantiate(HitEmitterPrefab, c.transform.position, c.transform.rotation);
+            c.transform.LookAt(transform);
+            c.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * 100); //Hard code 100 for now
+            c.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100f);
+            c.gameObject.GetComponent<Controller>().backLight.IntensifyLight(.5f, 5f);
+            c.gameObject.GetComponent<PlayerController>().TakeDamage(1);
+        }
     }
 }
