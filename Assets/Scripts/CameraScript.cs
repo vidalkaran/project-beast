@@ -7,7 +7,7 @@ public class CameraScript : MonoBehaviour
     //Dependencies
     public Transform target; //The gameobject to follow
     public Transform cameraSmoother; //an empty game object used only to smoothen camera movement.
-    public Camera camera; //The camera component. This should be on a separate gameobject so that it can be offset. 
+    public Camera cameraComponent; //The camera component. This should be on a separate gameobject so that it can be offset. 
 
     //Variables
     public Vector3 offset; 
@@ -19,7 +19,7 @@ public class CameraScript : MonoBehaviour
 
     private void Start()
     {
-        camera.transform.position = transform.position + offset;
+        cameraComponent.transform.position = transform.position + offset;
     }
 
     // Update is called once per frame
@@ -34,6 +34,6 @@ public class CameraScript : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotation, speed);
 
         //Update position of camera attachment.
-        camera.transform.LookAt(transform);
+        cameraComponent.transform.LookAt(transform);
     }
 }

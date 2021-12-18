@@ -5,8 +5,8 @@ using UnityEngine;
 public class BackLightScript : MonoBehaviour
 {
     //Dependencies
-    Transform camera;
-    Light light;
+    private Transform cameraTransform;
+    private Light parentLight;
 
     //For changing the light on triggers
     float defaultLightIntensity;
@@ -14,16 +14,16 @@ public class BackLightScript : MonoBehaviour
 
     private void Awake()
     {
-        camera = Camera.main.transform;
-        light = GetComponentInChildren<Light>();
+        cameraTransform = Camera.main.transform;
+        parentLight = GetComponentInChildren<Light>();
 
-        defaultLightIntensity = light.intensity;
+        defaultLightIntensity = parentLight.intensity;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.LookAt(camera);
+        transform.LookAt(cameraTransform);
     }
 
     public void IntensifyLight(float transitionTime, float intensityMod)
@@ -38,7 +38,7 @@ public class BackLightScript : MonoBehaviour
 
         while (transitionTime > 0)
         {
-            light.intensity = Mathf.Lerp(defaultLightIntensity, newLightIntensity, transitionTime);
+            parentLight.intensity = Mathf.Lerp(defaultLightIntensity, newLightIntensity, transitionTime);
             transitionTime -= Time.deltaTime;
             yield return null;
         }

@@ -10,9 +10,6 @@ public class PlayerController : Controller
     [HideInInspector] public PlayerCamera playerCamera;
     [HideInInspector] public PlayerCombat playerCombat;
 
-    //Manually set these dependencies in the editor for now...
-    public Collider attackCollider;
-
     public override void Awake()
     {
         base.Awake();
@@ -64,9 +61,9 @@ public class PlayerController : Controller
 
             //Camera
             if (Input.GetKey(KeyCode.Q))
-                playerCamera.Rotate(Vector3.up);
+                playerCamera.Rotate(Vector3.up * 0.5f);
             if (Input.GetKey(KeyCode.E))
-                playerCamera.Rotate(Vector3.down);
+                playerCamera.Rotate(Vector3.down * 0.5f);
         }
 
         //Combat
