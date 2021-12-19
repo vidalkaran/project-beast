@@ -17,7 +17,6 @@ public class PlayerActor : Actor2D
         playerMove = GetComponent<PlayerMove>();
         playerCamera = GetComponent<PlayerCamera>();
         playerCombat = GetComponent<PlayerCombat>();
-        health = 99;
     }
 
     void Update()
@@ -48,9 +47,12 @@ public class PlayerActor : Actor2D
             case ActorState.DODGE_STATE:
             {
                 break;
-            }          
-            //Todo
-            //Add a dodge and parry state.
+            }
+            case ActorState.PARRY_STATE:
+            {
+                playerMove.moveVector = Vector3.zero;
+                break;
+            }
         }
     }
 
@@ -74,5 +76,9 @@ public class PlayerActor : Actor2D
         //Dodge
         if (Input.GetKeyDown(KeyCode.LeftShift))
             playerMove.Dash();
-    } 
+
+        //Parry
+        if (Input.GetKeyDown(KeyCode.Z))
+            playerCombat.Parry();
+    }
 }

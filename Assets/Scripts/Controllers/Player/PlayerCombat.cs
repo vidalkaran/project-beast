@@ -22,6 +22,12 @@ public class PlayerCombat : PlayerComponent
         StartCoroutine(AttackCoroutine());
     }
 
+    public void Parry()
+    {
+        StartCoroutine(ParryCoroutine());
+    }
+
+
     void HandleHit()
     {
         //Get everything our hitbox collided with.
@@ -49,6 +55,13 @@ public class PlayerCombat : PlayerComponent
         yield return new WaitForSeconds(basicAttack.attackWindup);
         HandleHit();
         yield return new WaitForSeconds(basicAttack.attackCooldown);
+        actor.state = ActorState.IDLE_STATE;
+    }
+
+    IEnumerator ParryCoroutine()
+    {
+        actor.state = ActorState.PARRY_STATE;
+        yield return new WaitForSeconds(2f);
         actor.state = ActorState.IDLE_STATE;
     }
 }

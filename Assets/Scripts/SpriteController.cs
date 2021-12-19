@@ -22,7 +22,7 @@ public class SpriteController : MonoBehaviour
        
     private void Awake()
     {
-        actor = GetComponentInParent<Actor2D>();         //Maybe need to find a better way of doing this :(
+        actor = GetComponentInParent<Actor2D>();
         animator = GetComponent<Animator>();
     }
 

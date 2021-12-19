@@ -21,9 +21,9 @@ public class Actor2D : MonoBehaviour
 
     //Vars
     [HideInInspector] public Orientation orientation;
-    [HideInInspector] public ActorState state;
     [HideInInspector] public Rigidbody rigidBody;
 
+    public ActorState state;
     public float health = 0f;
 
     //temp
@@ -40,23 +40,15 @@ public class Actor2D : MonoBehaviour
         backLight = GetComponentInChildren<BackLightScript>();
     }
 
-    public void TakeDamage(float damage)
-    {
-        StopCoroutine("Stunned");
-
-        health -= 1;
-        state = ActorState.STUNNED_STATE;
-
-        if (health <= 0)
-        {
-            Debug.Log(gameObject.name + " has died"); //Send this to a notification center at some point
-            Destroy(gameObject);
-        }
-    }
-
+    //This should be virtual and implemented by the higher order class, ie the PlayerActor or EnemyActor...
     public void ResolveAttack(GameObject enemyActor, AttackData enemyAttack)
     {
-        if (state != ActorState.DODGE_STATE)
+        if (state == ActorState.PARRY_STATE)
+        {
+            //This is... horrible... but temporary
+            enemyActor.GetComponent<BadGuyActor>().ResolveAttack(gameObject, Resources.Load<AttackData>("TempParryData"));
+        }
+        else
         {
             StopCoroutine("Stunned");
 
@@ -69,14 +61,13 @@ public class Actor2D : MonoBehaviour
 
             //Enemy
             backLight.IntensifyLight(enemyAttack.intensifyTime, enemyAttack.intensifyMod);
-
             health -= enemyAttack.attackDamage;
             state = ActorState.STUNNED_STATE;
 
             if (health <= 0)
             {
-                Debug.Log(gameObject.name + " has died"); //Send this to a notification center at some point
-                Destroy(gameObject);
+                Debug.Log(gameObject.name + " has died"); //Send this to a notification center at some point. 
+                Destroy(gameObject); //Player should override this to perform some gameOver logic
             }
         }
     }
