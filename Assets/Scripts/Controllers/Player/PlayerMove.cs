@@ -12,6 +12,14 @@ public class PlayerMove : PlayerComponent
     public float dashCooldown = .5f;
     public float dashSpeed = 5f;
 
+    //Dependencies
+    ParticleSystem dashEffect;
+
+    private void Start()
+    {
+        dashEffect = Instantiate(Resources.Load<GameObject>("Prefabs/SFX/DashEffect"), new Vector3(0, 0, .5f), Quaternion.identity).GetComponent<ParticleSystem>();
+        dashEffect.Stop();
+    }
 
     //Movement is handled in fixed update for collision
     private void FixedUpdate() 
@@ -51,12 +59,16 @@ public class PlayerMove : PlayerComponent
     IEnumerator DashCoroutine()
     {
         actor.state = ActorState.DODGE_STATE;
+        dashEffect.transform.position = transform.position;
+        dashEffect.transform.rotation = transform.rotation;
+        dashEffect.Play();
         moveVector = transform.forward;
         Physics.IgnoreLayerCollision(3, 8, true);
         yield return new WaitForSeconds(dashLength);
         moveVector = Vector3.zero;
         Physics.IgnoreLayerCollision(3, 8, false);
         yield return new WaitForSeconds(dashCooldown);
+        dashEffect.Stop();
         actor.state = ActorState.IDLE_STATE;
     }
 }

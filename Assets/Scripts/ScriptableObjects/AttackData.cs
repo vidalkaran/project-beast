@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Attack Data", menuName = "Actor/AttackData", order = 51)]
 public class AttackData : ScriptableObject
 {
-    public GameObject HitEmitterPrefab;  //The hit effect Note: Should outsource this to an Object Pool later for performance.
+    public GameObject HitEmitterPrefab;  //The hit effect Note: Should outsource this to an Object Pool later for performance. 
     public GameObject hitboxPrefab; //The hitbox mesh of this attack.
     public float attackDamage; //Numerical damage of the attack
     public float attackForce; //How much knockback the attack has

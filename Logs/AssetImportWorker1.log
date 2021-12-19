@@ -1,0 +1,2184 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16277 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Git/project-beast
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58961
+Successfully changed project path to: D:/Git/project-beast
+D:/Git/project-beast
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 27.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Git/project-beast/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001690 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000599 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1511 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.0 MB.
+System memory in use after: 74.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1957.
+Total: 2.457200 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.059700 ms MarkObjects: 2.049400 ms  DeleteObjects: 0.099800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/9e8e240693123e6.png
+  artifactKey: Guid(87592d5e513164d49a0d53f1bc1b14c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/9e8e240693123e6.png using Guid(87592d5e513164d49a0d53f1bc1b14c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aeee732d448446c8e373b4614e66076') in 0.079465 seconds
+  Import took 0.081756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.158359 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(b4c0966e3509da64aa429ec1b511d67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(b4c0966e3509da64aa429ec1b511d67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168ced2da9575e5aeb0d27c09dd57338') in 0.001504 seconds
+  Import took 0.003697 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1961.
+Total: 1.612600 ms (FindLiveObjects: 0.175800 ms CreateObjectMapping: 0.052600 ms MarkObjects: 1.327500 ms  DeleteObjects: 0.055500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.9 MB.
+System memory in use after: 73.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1963.
+Total: 2.070100 ms (FindLiveObjects: 0.205800 ms CreateObjectMapping: 0.073900 ms MarkObjects: 1.728500 ms  DeleteObjects: 0.060300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.229771 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2460ce317af72d3518e08eaee31067a') in 0.023285 seconds
+  Import took 0.025756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.068676 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03fe5d063e0e85ce0e5ad3c0f9511b59') in 0.003647 seconds
+  Import took 0.006757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.318132 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114270755d4c32e1d04966ee2a6c7c3d') in 0.003280 seconds
+  Import took 0.023166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.244343 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04b2fb6874eef38b15e88ff095c9e3c') in 0.003667 seconds
+  Import took 0.006431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.085027 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e0e8088d7d980dbefaf2ff3321f5af') in 0.003104 seconds
+  Import took 0.005620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.273854 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27420358bb03d1ce4ab96ae27b2f113') in 0.003165 seconds
+  Import took 0.005539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005932 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27420358bb03d1ce4ab96ae27b2f113') in 0.003079 seconds
+  Import took 0.005870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.199315 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b696a0d48e097399fde6d94f08d2fa3d') in 0.003248 seconds
+  Import took 0.005741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.578344 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375ba7e65c6e5eb82d2d1d06888632ed') in 0.002996 seconds
+  Import took 0.005458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005618 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375ba7e65c6e5eb82d2d1d06888632ed') in 0.003321 seconds
+  Import took 0.006071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.178480 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e6a600c00bda48c2e62911a8f69c2a') in 0.004222 seconds
+  Import took 0.007367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005597 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e6a600c00bda48c2e62911a8f69c2a') in 0.003592 seconds
+  Import took 0.006385 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000507 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.0 MB.
+System memory in use after: 73.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1965.
+Total: 1.919400 ms (FindLiveObjects: 0.229200 ms CreateObjectMapping: 0.075100 ms MarkObjects: 1.565600 ms  DeleteObjects: 0.048100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.721 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.6 MB.
+System memory in use after: 73.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1967.
+Total: 2.427500 ms (FindLiveObjects: 0.268500 ms CreateObjectMapping: 0.106700 ms MarkObjects: 1.970400 ms  DeleteObjects: 0.079200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000538 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.764 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 74.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1969.
+Total: 2.127800 ms (FindLiveObjects: 0.436000 ms CreateObjectMapping: 0.133700 ms MarkObjects: 1.463700 ms  DeleteObjects: 0.092800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000541 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.1 MB.
+System memory in use after: 74.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1971.
+Total: 2.191600 ms (FindLiveObjects: 0.264800 ms CreateObjectMapping: 0.118100 ms MarkObjects: 1.720700 ms  DeleteObjects: 0.086300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 372.349200 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63996c7ddc84f3375262f321a923455') in 0.020764 seconds
+  Import took 0.023388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.438303 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9357427f53e692e727c0e8c33dead96') in 0.003393 seconds
+  Import took 0.006151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.040353 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39be5a19f13fd589dc503a4313339911') in 0.003288 seconds
+  Import took 0.005719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.815315 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b067b11b2574fb9a8bf6a40d8e51ed') in 0.003095 seconds
+  Import took 0.005498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.238598 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677dc70197dcdab4e67f14470ffbe8dd') in 0.003278 seconds
+  Import took 0.005633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.818748 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ef1bcc5915da7222439e842e1992e7') in 0.003239 seconds
+  Import took 0.006310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.105486 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db866dd9f5c9ecf75c9b41e07ff25cba') in 0.003619 seconds
+  Import took 0.006784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.219501 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c607a5568d6045ae6c47fcbd393c0204') in 0.003171 seconds
+  Import took 0.022912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.785547 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899c06e5ea6719af8e36b16f2d4cce97') in 0.003124 seconds
+  Import took 0.005463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.436272 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bbb2198ce847265aea17c942d47813') in 0.003796 seconds
+  Import took 0.006996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.429711 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13973f293529a339819fdf1f2564d18e') in 0.003436 seconds
+  Import took 0.005861 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.5 MB.
+System memory in use after: 73.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1973.
+Total: 2.038700 ms (FindLiveObjects: 0.161600 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.760800 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.865289 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8184887abff9831f9ed6947acfa57d0') in 0.024650 seconds
+  Import took 0.027419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.550746 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f2d405995ff4e6ae4985b3c62ef817') in 0.003462 seconds
+  Import took 0.006293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.002227 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cd809e343458d54e32c6e4d02abd3f') in 0.003300 seconds
+  Import took 0.005834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.824619 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cc46693f374f6229afe8c3fc6582fe') in 0.003233 seconds
+  Import took 0.005588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.226424 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5678dfc396b3ac52dd9bff7d9d42e381') in 0.003113 seconds
+  Import took 0.005695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.642076 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b142c508847dda12720ab3138e0d1b60') in 0.003412 seconds
+  Import took 0.005881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.022523 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e1583eaddc6875424d7efcd417f73b') in 0.003352 seconds
+  Import took 0.005681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.018690 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905c1710d40b4b3a59cff7ebe62e46df') in 0.003175 seconds
+  Import took 0.005806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.079639 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010236d4911e5ff39f84ba7b34689503') in 0.003299 seconds
+  Import took 0.005920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.996768 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e9f313f0c3475d20e748e6853ca3df') in 0.003492 seconds
+  Import took 0.020031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.170975 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b104239b92df8e8d41d32e6ff05dbe3a') in 0.003591 seconds
+  Import took 0.006412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.044916 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2e2ee159ed1e844817f502d4d6c042') in 0.003221 seconds
+  Import took 0.026027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.818356 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476e1c1549141719aec865cf35be8b4f') in 0.003433 seconds
+  Import took 0.016819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.993141 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98efe5d58454c2fd4f95287e9ae658e') in 0.003177 seconds
+  Import took 0.005512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.851572 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adab35a8d9660a2a8b5e487b5f6c638') in 0.003163 seconds
+  Import took 0.006274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.399583 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a3ebed4fd4928b8adba321e275d6dc') in 0.003127 seconds
+  Import took 0.005558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.535224 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9177e02bc0f3908418cf6a0099a5f5c') in 0.003471 seconds
+  Import took 0.005955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.251449 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194919e26958981c15e756e21b3b6b94') in 0.003174 seconds
+  Import took 0.005602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.424508 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4245f864b6ae389d2a5364aaaa3a2e') in 0.003229 seconds
+  Import took 0.005746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.897785 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2213077db19031d3918a6f9b2be47dc') in 0.003721 seconds
+  Import took 0.006218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.013725 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f395a7a79b66e3bacd35d724e96766f1') in 0.003725 seconds
+  Import took 0.006314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.667879 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d49fe4ddae7c43e51fa93dcd1555848') in 0.003344 seconds
+  Import took 0.006293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.828235 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fe8e2ce42fe3e4aa92f64e216bd9fb') in 0.003279 seconds
+  Import took 0.005751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.567046 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5744da03ff68c170c244edd8638326f') in 0.003342 seconds
+  Import took 0.005949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.465684 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbd36576f55cce0260b92b3d7eafc41') in 0.003966 seconds
+  Import took 0.006586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.034348 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39250857be3a411abbb6ef2d33b59ac5') in 0.003524 seconds
+  Import took 0.005954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.043500 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58be11c7244d2b84f38fdc4fbc787a63') in 0.003217 seconds
+  Import took 0.005643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.528026 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a66e98d29fe70293abac024b488ebe') in 0.003165 seconds
+  Import took 0.005868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.086464 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6533a43dde1f5b7eddd71cdf301e0a') in 0.003930 seconds
+  Import took 0.006650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.481803 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3b792d92485a355f0b979e6a742745') in 0.003374 seconds
+  Import took 0.005899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.270206 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82aa969b799245421ba01234b92c3f09') in 0.005442 seconds
+  Import took 0.009014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.617260 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144a9eb7360affbbaef3e01d23104ab9') in 0.003082 seconds
+  Import took 0.005827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.409606 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fd1f34af2e7efcaf3c96cd31a53166') in 0.003723 seconds
+  Import took 0.006615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.808607 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a2f353a006e0c0476938690eaccce1') in 0.003444 seconds
+  Import took 0.005930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.830380 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4b5753343a52a99d895f9a4859be9e') in 0.003484 seconds
+  Import took 0.005933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.625226 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3999fec91b0613b8dc6aa165eba0528d') in 0.003600 seconds
+  Import took 0.006121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.212976 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc31f3cdb8582468c4d82aac5b682500') in 0.003183 seconds
+  Import took 0.005714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.909328 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b232af5c4c182e8f70adb8956833585') in 0.003962 seconds
+  Import took 0.006563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.474167 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf987fd6a78729d885a3f01a6d968956') in 0.003192 seconds
+  Import took 0.005751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.235694 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2673358d2d9b8097dd9c12468d4a0d') in 0.003266 seconds
+  Import took 0.005718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.138010 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50efca444ba214cb49a6a5b9fb846dd2') in 0.003302 seconds
+  Import took 0.005709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.105860 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2ad584b6445765221efae2e6ff41a9') in 0.003119 seconds
+  Import took 0.005730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.698336 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb0d66105db8c52ad955a0bdc30e948') in 0.003251 seconds
+  Import took 0.005748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.300030 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77fd0f778a1464ac2b59f12672dd161') in 0.003609 seconds
+  Import took 0.006062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.751954 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b00eca3a36c5122a300a5fbbf69b58b') in 0.003463 seconds
+  Import took 0.006243 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.701 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 73.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1975.
+Total: 2.454800 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.096800 ms MarkObjects: 2.038700 ms  DeleteObjects: 0.056000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.514665 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24126a9826d60f999b16187da681612c') in 0.022672 seconds
+  Import took 0.025403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.272847 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9f5a8ff20c2870223bd826d8450be5') in 0.003822 seconds
+  Import took 0.006413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.411747 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb66885e1de9d871d344a8804799981') in 0.003485 seconds
+  Import took 0.005797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.853340 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5e70bb7932c576e412d3d5417bc3df') in 0.003024 seconds
+  Import took 0.005737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.011265 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158e4eddf1f7c5d881868cded46bf1c5') in 0.003048 seconds
+  Import took 0.005513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.308888 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4265be43085c6888ffdf5c3b92c3223') in 0.003829 seconds
+  Import took 0.006394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.238461 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640c8e870ece79d70852a27efa77f046') in 0.003381 seconds
+  Import took 0.005761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.449981 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64aea6b64b6d94725bacf3d2d853012') in 0.003048 seconds
+  Import took 0.005860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.775381 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a532c1c94a778544d583a7de5a700d5') in 0.003256 seconds
+  Import took 0.005956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.154859 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401ca9a7c25a0f834e285396d5c2aa3b') in 0.003538 seconds
+  Import took 0.006318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.161965 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25fd637fd469092e20cc0ad121ca5744') in 0.003471 seconds
+  Import took 0.006511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.926828 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0c34fd318bdf65dcb4e2af01fe38b2') in 0.003335 seconds
+  Import took 0.005926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.197798 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0691456f7cdda3dd3ec621b24aebf2') in 0.003694 seconds
+  Import took 0.006163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.897772 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ab5f20491a788b999880d552f0a64e') in 0.003184 seconds
+  Import took 0.005897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.720036 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa99a27aeb33fbbd0c4f9220b4f9403') in 0.004161 seconds
+  Import took 0.006700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.225792 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe53274ae31008f1ade19f2e1c17f37') in 0.003303 seconds
+  Import took 0.005749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.318217 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867968cec99477332847b76e3bc24f2d') in 0.003508 seconds
+  Import took 0.006141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.474542 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9646b95fa7e371f27e897d39177202') in 0.003353 seconds
+  Import took 0.006154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.860188 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506bc49d0bdb7c89a1dd20d0cfedba5c') in 0.003406 seconds
+  Import took 0.005805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.401008 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c815407ebe8f1a5c896111893d91011') in 0.003182 seconds
+  Import took 0.005891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.298115 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a502b62130cf30ce294e7dab225c7e8') in 0.003357 seconds
+  Import took 0.005784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.016290 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da282b74adba0d4c1eee594921c9b0d') in 0.003078 seconds
+  Import took 0.005752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.319400 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b1e39c10633004d2d0a0113ed1414c') in 0.003329 seconds
+  Import took 0.006224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.071680 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492611bb79870fa2985577ca517b37a9') in 0.003424 seconds
+  Import took 0.005865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.754220 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c2a535050b4c943dea8030be2176a8') in 0.004173 seconds
+  Import took 0.009516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.506688 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d681836684d9fe8e8d6a01a09adeb3f') in 0.003101 seconds
+  Import took 0.005485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.204405 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0f654f054ebd77413916a9323a87f3') in 0.003004 seconds
+  Import took 0.005452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.924977 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84dbec167a41813103579f305bf5306d') in 0.003804 seconds
+  Import took 0.006717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.594731 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79cc9d4605b57f67d569cc0149aef49') in 0.003436 seconds
+  Import took 0.005954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.809935 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c92d1dd85a248f716f38fc7bb0f40a') in 0.003449 seconds
+  Import took 0.006039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.055097 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6eb3762b43e3ff94f5d5037f0a5eaf') in 0.005259 seconds
+  Import took 0.008323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.979316 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29039b805c68e282455e89cb4923a7e') in 0.003179 seconds
+  Import took 0.005692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.214571 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5896ae2b13260e965ade92d2fed349e') in 0.003408 seconds
+  Import took 0.006093 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000667 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.703 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.1 MB.
+System memory in use after: 74.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1977.
+Total: 1.617100 ms (FindLiveObjects: 0.172200 ms CreateObjectMapping: 0.050800 ms MarkObjects: 1.335700 ms  DeleteObjects: 0.057500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.750147 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf6b597104888167bc9ab1c975c7397') in 0.025306 seconds
+  Import took 0.027818 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000975 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.944 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.5 MB.
+System memory in use after: 73.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1979.
+Total: 2.218700 ms (FindLiveObjects: 0.334500 ms CreateObjectMapping: 0.116700 ms MarkObjects: 1.710900 ms  DeleteObjects: 0.054500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.933655 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e111f9dd8d86feacb2aa9e03b4e3cc') in 0.022053 seconds
+  Import took 0.024458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.951899 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdcdf7e25795824bce8cfbc73a10f81b') in 0.003092 seconds
+  Import took 0.005613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.457585 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38857a4bad1875f57aaab6fe793dee2') in 0.003347 seconds
+  Import took 0.005878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.037720 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fca76822b2367894117b2eea2d9922') in 0.003356 seconds
+  Import took 0.006159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.015408 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e4c94d699fdc9c66533c6799585500') in 0.003311 seconds
+  Import took 0.005681 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000527 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 73.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1981.
+Total: 1.780400 ms (FindLiveObjects: 0.185100 ms CreateObjectMapping: 0.055700 ms MarkObjects: 1.469000 ms  DeleteObjects: 0.069400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000507 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.1 MB.
+System memory in use after: 74.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1983.
+Total: 1.951400 ms (FindLiveObjects: 0.166100 ms CreateObjectMapping: 0.055000 ms MarkObjects: 1.668600 ms  DeleteObjects: 0.060500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.663874 seconds.
+  path: Assets/Materials/DungeonTile.mat
+  artifactKey: Guid(6d958d8197b80c54dae26869e667aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DungeonTile.mat using Guid(6d958d8197b80c54dae26869e667aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed3f9fef99fdaf5c0f8e47587d4b19a') in 0.077436 seconds
+  Import took 0.080068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Materials/LightingMat.mat
+  artifactKey: Guid(02cc82af3ec5bb4468e11b385589e08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/LightingMat.mat using Guid(02cc82af3ec5bb4468e11b385589e08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e5ae1c85eb43e2acb0ed8ae8e71230') in 0.016601 seconds
+  Import took 0.018947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Materials/DungeonTile.mat
+  artifactKey: Guid(6d958d8197b80c54dae26869e667aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DungeonTile.mat using Guid(6d958d8197b80c54dae26869e667aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed3f9fef99fdaf5c0f8e47587d4b19a') in 0.006583 seconds
+  Import took 0.009273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Materials/LightingMat.mat
+  artifactKey: Guid(02cc82af3ec5bb4468e11b385589e08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/LightingMat.mat using Guid(02cc82af3ec5bb4468e11b385589e08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e5ae1c85eb43e2acb0ed8ae8e71230') in 0.005225 seconds
+  Import took 0.007516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.000649 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea29f1a1fceec6b4dde8e0eff8716900') in 0.010599 seconds
+  Import took 0.013158 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000663 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.706 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.8 MB.
+System memory in use after: 76.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 2.210900 ms (FindLiveObjects: 0.232900 ms CreateObjectMapping: 0.071700 ms MarkObjects: 1.831800 ms  DeleteObjects: 0.072900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.184233 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea57d103973e43c4231ce84a420a6c3b') in 0.026693 seconds
+  Import took 0.029680 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.701 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.1 MB.
+System memory in use after: 77.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2026.
+Total: 1.957500 ms (FindLiveObjects: 0.164300 ms CreateObjectMapping: 0.056800 ms MarkObjects: 1.678800 ms  DeleteObjects: 0.056000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.327403 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0c09400029fcba58fd9ce1fbad1deb') in 0.022378 seconds
+  Import took 0.025331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.344236 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd5c1165b9d6935567adf596d8d4a6d') in 0.003132 seconds
+  Import took 0.005569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.863048 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f8965f233e8a35c3a5a6a80c56885f') in 0.003725 seconds
+  Import took 0.006574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.399792 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c217e57d81a5d60cbe763de3527e481') in 0.003310 seconds
+  Import took 0.006018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.844286 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b67d57546c53fcc974533f112d812c85') in 0.003085 seconds
+  Import took 0.005798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.459496 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6894e656c1a7d5f4b71b83e7025f3f32') in 0.003077 seconds
+  Import took 0.005688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.844624 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1d07a1e6799102c49f850f82677d4e') in 0.003355 seconds
+  Import took 0.006204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.673594 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574eabd4bfe9ad71c558ce0ee0128876') in 0.003484 seconds
+  Import took 0.006283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.256081 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4694af6a21b37b30b9293872a1a01549') in 0.003239 seconds
+  Import took 0.005687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.216275 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4e59191d1f2bf8793c6b1e37832a42') in 0.003583 seconds
+  Import took 0.023902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.664651 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d551bcd28174ddc7b7cf584860d96a') in 0.003205 seconds
+  Import took 0.005696 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000575 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2028.
+Total: 1.981500 ms (FindLiveObjects: 0.206500 ms CreateObjectMapping: 0.073700 ms MarkObjects: 1.637700 ms  DeleteObjects: 0.062100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.382540 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00ed0b7ecec807fe2843e61356df06a') in 0.021278 seconds
+  Import took 0.023803 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000621 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2030.
+Total: 2.196500 ms (FindLiveObjects: 0.216500 ms CreateObjectMapping: 0.068900 ms MarkObjects: 1.835700 ms  DeleteObjects: 0.073700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.363177 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a616217c8f4addfa755086f17e1f5ad') in 0.024876 seconds
+  Import took 0.028012 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.739 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.1 MB.
+System memory in use after: 77.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2032.
+Total: 1.707400 ms (FindLiveObjects: 0.228200 ms CreateObjectMapping: 0.072200 ms MarkObjects: 1.353500 ms  DeleteObjects: 0.052100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.814098 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a97311908c741a2b7de7092ffc9b62') in 0.028344 seconds
+  Import took 0.031674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.008031 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f70a20886b19ca7983f1cf6393faf4') in 0.003331 seconds
+  Import took 0.005968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.732327 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6e45df7dd398ff3256101f972a5c7c') in 0.003132 seconds
+  Import took 0.005919 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000579 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.4 MB.
+System memory in use after: 77.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2034.
+Total: 1.726100 ms (FindLiveObjects: 0.284300 ms CreateObjectMapping: 0.128100 ms MarkObjects: 1.262500 ms  DeleteObjects: 0.049900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.677384 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e2656fa1673af55230c1c9eaba5a3e') in 0.026174 seconds
+  Import took 0.028958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.949574 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e2656fa1673af55230c1c9eaba5a3e') in 0.003368 seconds
+  Import took 0.005883 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000555 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.717 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2036.
+Total: 1.854100 ms (FindLiveObjects: 0.195100 ms CreateObjectMapping: 0.056000 ms MarkObjects: 1.544000 ms  DeleteObjects: 0.057700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.055208 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efd72069029aa128dfafb356016755a6') in 0.022368 seconds
+  Import took 0.025258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.521129 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119a941c0e1682f37e0479e1e9a4f0ba') in 0.003600 seconds
+  Import took 0.006509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.848105 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92572ca153989db0e27765763b5e0840') in 0.003211 seconds
+  Import took 0.005950 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000596 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.1 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2038.
+Total: 1.780700 ms (FindLiveObjects: 0.273100 ms CreateObjectMapping: 0.088500 ms MarkObjects: 1.361300 ms  DeleteObjects: 0.056400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000932 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.4 MB.
+System memory in use after: 77.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2040.
+Total: 1.782200 ms (FindLiveObjects: 0.191600 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.486500 ms  DeleteObjects: 0.056100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000638 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.776 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2042.
+Total: 2.325800 ms (FindLiveObjects: 0.254500 ms CreateObjectMapping: 0.123400 ms MarkObjects: 1.874100 ms  DeleteObjects: 0.071800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000586 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2044.
+Total: 2.538500 ms (FindLiveObjects: 0.305900 ms CreateObjectMapping: 0.132600 ms MarkObjects: 2.024500 ms  DeleteObjects: 0.073900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000809 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.3 MB.
+System memory in use after: 77.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 2.162500 ms (FindLiveObjects: 0.244600 ms CreateObjectMapping: 0.088600 ms MarkObjects: 1.768900 ms  DeleteObjects: 0.059000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 311.348215 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a478aee0f57c90a0ac14bd35d2def560') in 0.023293 seconds
+  Import took 0.026119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.462386 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a7effdd26ccc74d9c8f17fc65d0ce0') in 0.003164 seconds
+  Import took 0.005597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006951 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a7effdd26ccc74d9c8f17fc65d0ce0') in 0.003707 seconds
+  Import took 0.006858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.394273 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035dce1d2ae2e3f1e1e7e53753cdcf52') in 0.002921 seconds
+  Import took 0.005256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005877 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035dce1d2ae2e3f1e1e7e53753cdcf52') in 0.003019 seconds
+  Import took 0.005483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.832827 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2776032eed9a8a26a16cb0d997edb83') in 0.003235 seconds
+  Import took 0.006038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005925 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2776032eed9a8a26a16cb0d997edb83') in 0.003822 seconds
+  Import took 0.007135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.023814 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae821c7acc554731712436cdd5993250') in 0.002978 seconds
+  Import took 0.005399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006898 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae821c7acc554731712436cdd5993250') in 0.003259 seconds
+  Import took 0.005804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.582414 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c224c812b41aec3798f0935de4ea8dbb') in 0.003264 seconds
+  Import took 0.006218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006286 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c224c812b41aec3798f0935de4ea8dbb') in 0.003140 seconds
+  Import took 0.005613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.253808 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16baada6687ec00f7683ac5c1138caf8') in 0.002955 seconds
+  Import took 0.005339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006032 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16baada6687ec00f7683ac5c1138caf8') in 0.002813 seconds
+  Import took 0.005680 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000556 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2048.
+Total: 2.518900 ms (FindLiveObjects: 0.320000 ms CreateObjectMapping: 0.104700 ms MarkObjects: 2.013000 ms  DeleteObjects: 0.079100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000556 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2050.
+Total: 2.056000 ms (FindLiveObjects: 0.292700 ms CreateObjectMapping: 0.108700 ms MarkObjects: 1.587500 ms  DeleteObjects: 0.066100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.422124 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd717d02f516b0a96a8953969028d9689') in 0.021280 seconds
+  Import took 0.024462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.777218 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01660b698a0a767a7b501b58669be552') in 0.003057 seconds
+  Import took 0.005470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.581719 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b916232463c666014a17800ca8a9e72') in 0.003441 seconds
+  Import took 0.006180 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000508 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.931 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.3 MB.
+System memory in use after: 77.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2052.
+Total: 4.168800 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.088300 ms MarkObjects: 3.758100 ms  DeleteObjects: 0.080300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.597508 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd212b1765536df75a6e36b73b65056') in 0.021817 seconds
+  Import took 0.024264 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000550 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.705 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2054.
+Total: 1.971600 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.073700 ms MarkObjects: 1.609100 ms  DeleteObjects: 0.054100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.724 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.9 MB.
+System memory in use after: 77.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2056.
+Total: 1.751600 ms (FindLiveObjects: 0.167100 ms CreateObjectMapping: 0.052300 ms MarkObjects: 1.473500 ms  DeleteObjects: 0.057400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000717 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.2 MB.
+System memory in use after: 77.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2058.
+Total: 1.837300 ms (FindLiveObjects: 0.262000 ms CreateObjectMapping: 0.064700 ms MarkObjects: 1.446200 ms  DeleteObjects: 0.063100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 298.933042 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7efdc74b2b3e6eef4a825d40f325a1a') in 0.021912 seconds
+  Import took 0.024562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.013258 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de62dcc8cbbf757ecd8f5cf34a9a1b9b') in 0.002996 seconds
+  Import took 0.005911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.804999 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf7f4948533eb88332c97681fee57f4') in 0.003753 seconds
+  Import took 0.006565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.842033 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751aa8899e0e42dca94a3aa185be4cb2') in 0.003474 seconds
+  Import took 0.006332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.858431 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9cb0286a00b5a1adb41db0bbfa1416') in 0.003037 seconds
+  Import took 0.005896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.459254 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5a63fe431b9b660f711ef1d6c0972f') in 0.003143 seconds
+  Import took 0.005587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.224840 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b85665ae6a6097860fd05410ba5842') in 0.002942 seconds
+  Import took 0.005545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.381096 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22b02b26181875d603fb75c6542e664') in 0.003625 seconds
+  Import took 0.006382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.879764 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5179a5b702151845c72a57e69eb9fd56') in 0.003472 seconds
+  Import took 0.006799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.249504 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a016bc80a71d8eca68fa28d35a76e1f') in 0.003007 seconds
+  Import took 0.005704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.892905 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91758e32655e124243e7ac4213ea40c') in 0.003223 seconds
+  Import took 0.005845 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000538 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.718 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2060.
+Total: 2.607900 ms (FindLiveObjects: 0.349900 ms CreateObjectMapping: 0.163400 ms MarkObjects: 2.019000 ms  DeleteObjects: 0.074000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 76.9 MB.
+System memory in use after: 77.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2062.
+Total: 2.195800 ms (FindLiveObjects: 0.244500 ms CreateObjectMapping: 0.077400 ms MarkObjects: 1.812000 ms  DeleteObjects: 0.060400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000592 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.2 MB.
+System memory in use after: 77.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2064.
+Total: 1.794500 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.053200 ms MarkObjects: 1.470000 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.029081 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2d9c22a70dbe554a60cf45cccdf64c') in 0.023072 seconds
+  Import took 0.026078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.918802 seconds.
+  path: Assets/Resources/Prefabs/SFX/DashEffect.prefab
+  artifactKey: Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/SFX/DashEffect.prefab using Guid(b8e1c39c8d9e2b246b964bb1870607f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2d9c22a70dbe554a60cf45cccdf64c') in 0.002984 seconds
+  Import took 0.005904 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.5 MB.
+System memory in use after: 77.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2066.
+Total: 1.608800 ms (FindLiveObjects: 0.171400 ms CreateObjectMapping: 0.059800 ms MarkObjects: 1.318500 ms  DeleteObjects: 0.058000 ms)
+
