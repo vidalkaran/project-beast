@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Acting as a statecontroller AND input controller atm, will need to abstract this into two classes at some point... or maybe not?
-public class PlayerController : Controller
+public class PlayerActor : Actor2D
 {
-    //Dependencies //Note, should eventually abstract this out to generic move classes at some point...
-    [HideInInspector] public PlayerMove playerMove;
+    [HideInInspector] public PlayerMove playerMove; 
     [HideInInspector] public PlayerCamera playerCamera;
     [HideInInspector] public PlayerCombat playerCombat;
 
@@ -45,6 +44,11 @@ public class PlayerController : Controller
                 //Nothing Yet. Can be used for combos later. 
                 break;
             }
+            case ActorState.DODGE_STATE:
+            {
+                //Nothing Yet
+                break;
+            }          
             //Todo
             //Add a dodge and parry state.
         }
@@ -52,7 +56,7 @@ public class PlayerController : Controller
 
 
 
-    void HandleInput()
+    void HandleInput() // Eventually, when the above states are abstracted out to classes, we can have each one have their own HandleInput() function.
     {
         if (state != ActorState.ATTACKING_STATE)
         {
@@ -64,12 +68,14 @@ public class PlayerController : Controller
                 playerCamera.Rotate(Vector3.up);
             if (Input.GetKey(KeyCode.E))
                 playerCamera.Rotate(Vector3.down);
-        }
 
-        //Combat
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            playerCombat.Attack();
+            //Attack
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+                playerCombat.Attack();
+
+            //Dodge
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+                playerMove.Dash();
         }
     } 
 }

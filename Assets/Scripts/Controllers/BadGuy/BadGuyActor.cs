@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BadGuyController : Controller
+public class BadGuyActor : Actor2D
 {
     //To refactor out at some point
     public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
@@ -67,8 +67,8 @@ public class BadGuyController : Controller
             c.transform.LookAt(transform);
             c.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * 100); //Hard code 100 for now
             c.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100f);
-            c.gameObject.GetComponent<Controller>().backLight.IntensifyLight(.5f, 5f);
-            c.gameObject.GetComponent<PlayerController>().TakeDamage(1);
+            c.gameObject.GetComponent<Actor2D>().backLight.IntensifyLight(.5f, 5f);
+            c.gameObject.GetComponent<PlayerActor>().TakeDamage(1);
         }
     }
 }

@@ -14,7 +14,7 @@ using UnityEngine;
 public class SpriteController : MonoBehaviour
 {
     //Dependencies
-    public Controller controller;
+    public Actor2D actor;
     Animator animator;
 
     //Variables
@@ -22,21 +22,21 @@ public class SpriteController : MonoBehaviour
        
     private void Awake()
     {
-        controller = GetComponentInParent<Controller>();         //Need to find a better way of doing this :(
+        actor = GetComponentInParent<Actor2D>();         //Maybe need to find a better way of doing this :(
         animator = GetComponent<Animator>();
     }
 
     void LateUpdate()
     {
         //For debugging
-        if (controller == null)
+        if (actor == null)
         {
             Debug.LogError("SPRITE CONTROLLER CAN'T FIND A CONTROLLER", this);
         }
         else
         {
-            transform.LookAt(controller.mainCamera);
-            SetOrientation(Mathf.Round((controller.cameraAnchor.eulerAngles.y - controller.transform.eulerAngles.y) / 45) * 45);
+            transform.LookAt(actor.mainCamera);
+            SetOrientation(Mathf.Round((actor.cameraAnchor.eulerAngles.y - actor.transform.eulerAngles.y) / 45) * 45);
             UpdateOrientation();
             UpdateState();
         }
@@ -62,7 +62,7 @@ public class SpriteController : MonoBehaviour
         else if (facing == 45 || facing == -315)
             spriteOrientation = Orientation.UPLEFT_ORIENTATION;
 
-        controller.orientation = spriteOrientation;
+        actor.orientation = spriteOrientation;
     }
 
     void UpdateOrientation()
@@ -89,13 +89,13 @@ public class SpriteController : MonoBehaviour
     void UpdateState()
     {
         //Updating state
-        if (controller.state == ActorState.IDLE_STATE)
+        if (actor.state == ActorState.IDLE_STATE)
             animator.SetInteger("state", 0);
-        else if (controller.state == ActorState.WALKING_STATE)
+        else if (actor.state == ActorState.WALKING_STATE)
             animator.SetInteger("state", 1);
-        else if(controller.state == ActorState.ATTACKING_STATE)
+        else if(actor.state == ActorState.ATTACKING_STATE)
             animator.SetInteger("state", 2);
-        else if (controller.state == ActorState.STUNNED_STATE)
+        else if (actor.state == ActorState.STUNNED_STATE)
             animator.SetInteger("state", 0);
     }
 

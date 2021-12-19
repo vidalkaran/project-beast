@@ -7,7 +7,7 @@ public class PlayerCamera : PlayerComponent
     public float rotationSpeed = .2f;
     public void Rotate(Vector3 dir)
     {
-        controller.cameraSmoother.Rotate(dir * rotationSpeed, Space.World);
+        actor.cameraSmoother.Rotate(dir * rotationSpeed, Space.World);
     }
 
     public void ShakeScreen(float mod)
@@ -19,10 +19,10 @@ public class PlayerCamera : PlayerComponent
     {
         while (mod > 0)
         {
-            controller.cameraAnchor.localPosition = controller.cameraAnchor.localPosition + Random.insideUnitSphere * .1f;
+            actor.cameraAnchor.localPosition = actor.cameraAnchor.localPosition + Random.insideUnitSphere * .1f;
             mod -= Time.deltaTime;
             yield return null;
         }
-        controller.cameraAnchor.localPosition = transform.localPosition;
+        actor.cameraAnchor.localPosition = transform.localPosition;
     }
 }

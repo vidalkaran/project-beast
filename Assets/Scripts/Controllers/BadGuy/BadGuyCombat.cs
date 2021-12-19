@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BadGuyCombat : MonoBehaviour
 {
-    BadGuyController badGuyController;
+    BadGuyActor badGuyController;
 
     private void Awake()
     {
-        badGuyController = GetComponent<BadGuyController>();
+        badGuyController = GetComponent<BadGuyActor>();
     }
 
     public void GetHit()

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerController))]
+[RequireComponent(typeof(PlayerActor))]
 public class PlayerComponent : MonoBehaviour
 {
-    protected PlayerController controller;
+    protected PlayerActor actor;
 
     public void Awake()
     {
-        controller = GetComponent<PlayerController>();
+        actor = GetComponent<PlayerActor>();
     }
 }

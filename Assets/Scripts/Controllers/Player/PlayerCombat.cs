@@ -22,7 +22,6 @@ public class PlayerCombat : PlayerComponent
 
     public void Attack()
     {
-        controller.state = ActorState.ATTACKING_STATE;
         StartCoroutine(AttackCoroutine());
     }
 
@@ -38,7 +37,7 @@ public class PlayerCombat : PlayerComponent
         foreach (Collider c in collided)
         {
             //Player
-            controller.playerCamera.ShakeScreen(basicAttack.shakeScreenMod);
+            actor.playerCamera.ShakeScreen(basicAttack.shakeScreenMod);
             Instantiate(basicAttack.HitEmitterPrefab, c.transform.position, c.transform.rotation);
 
             //Physics
@@ -47,17 +46,18 @@ public class PlayerCombat : PlayerComponent
             c.transform.LookAt(transform);
 
             //Enemy
-            c.GetComponent<Controller>().backLight.IntensifyLight(basicAttack.intensifyTime, basicAttack.intensifyMod);
-            c.GetComponent<Controller>().TakeDamage(1);
+            c.GetComponent<BadGuyActor>().backLight.IntensifyLight(basicAttack.intensifyTime, basicAttack.intensifyMod);
+            c.GetComponent<BadGuyActor>().TakeDamage(1);
         }
     }
 
     //The attack coroutine.
     IEnumerator AttackCoroutine()
     {
+        actor.state = ActorState.ATTACKING_STATE;
         yield return new WaitForSeconds(basicAttack.attackWindup);
         HandleHit();
         yield return new WaitForSeconds(basicAttack.attackCooldown);
-        controller.state = ActorState.IDLE_STATE;
+        actor.state = ActorState.IDLE_STATE;
     }
 }

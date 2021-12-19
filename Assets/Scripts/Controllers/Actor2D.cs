@@ -7,7 +7,7 @@ using UnityEngine;
  * all unique actor controllers, like input and AI controllers, should inhereit this.
  */
 
-public class Controller : MonoBehaviour
+public class Actor2D : MonoBehaviour
 {
     //Manual dependencies
 
