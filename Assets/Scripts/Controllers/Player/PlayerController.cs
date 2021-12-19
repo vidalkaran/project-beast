@@ -61,9 +61,9 @@ public class PlayerController : Controller
 
             //Camera
             if (Input.GetKey(KeyCode.Q))
-                playerCamera.Rotate(Vector3.up * 0.5f);
+                playerCamera.Rotate(Vector3.up);
             if (Input.GetKey(KeyCode.E))
-                playerCamera.Rotate(Vector3.down * 0.5f);
+                playerCamera.Rotate(Vector3.down);
         }
 
         //Combat

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerCamera : PlayerComponent
 {
+    public float rotationSpeed = .2f;
     public void Rotate(Vector3 dir)
     {
-        controller.cameraSmoother.Rotate(dir, Space.World);
+        controller.cameraSmoother.Rotate(dir * rotationSpeed, Space.World);
     }
 
     public void ShakeScreen(float mod)
