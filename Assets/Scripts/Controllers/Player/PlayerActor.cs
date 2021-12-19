@@ -26,27 +26,27 @@ public class PlayerActor : Actor2D
         {
             case ActorState.IDLE_STATE:
             {
-                HandleInput();
+                HandleIdleInput();
                 break;
             }
             case ActorState.WALKING_STATE:
             {
-                HandleInput();
+                HandleIdleInput();
                 break;
             }
             case ActorState.STUNNED_STATE:
             {
+                playerMove.moveVector = Vector3.zero;
                 StartCoroutine("Stunned"); //Returns to idle state when done.
                 break;
             }
             case ActorState.ATTACKING_STATE:
             {
-                //Nothing Yet. Can be used for combos later. 
+                playerMove.moveVector = Vector3.zero;
                 break;
             }
             case ActorState.DODGE_STATE:
             {
-                //Nothing Yet
                 break;
             }          
             //Todo
@@ -56,26 +56,23 @@ public class PlayerActor : Actor2D
 
 
 
-    void HandleInput() // Eventually, when the above states are abstracted out to classes, we can have each one have their own HandleInput() function.
+    void HandleIdleInput() // Eventually, when the above states are abstracted out to classes, we can have each one have their own HandleInput() function.
     {
-        if (state != ActorState.ATTACKING_STATE)
-        {
-            //Movement
-            playerMove.UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        //Movement
+        playerMove.UpdateSpeed(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-            //Camera
-            if (Input.GetKey(KeyCode.Q))
-                playerCamera.Rotate(Vector3.up);
-            if (Input.GetKey(KeyCode.E))
-                playerCamera.Rotate(Vector3.down);
+        //Camera
+        if (Input.GetKey(KeyCode.Q))
+            playerCamera.Rotate(Vector3.up);
+        if (Input.GetKey(KeyCode.E))
+            playerCamera.Rotate(Vector3.down);
 
-            //Attack
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-                playerCombat.Attack();
+        //Attack
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+            playerCombat.Attack();
 
-            //Dodge
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-                playerMove.Dash();
-        }
+        //Dodge
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+            playerMove.Dash();
     } 
 }

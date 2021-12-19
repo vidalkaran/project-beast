@@ -3,19 +3,23 @@ using System.Collections;
 
 public class PlayerMove : PlayerComponent
 {
-    //Variables
-    public float speed = 1f;
-    private Vector3 moveVector;
+    //Move Variables
+    public float walkSpeed = 2f;
+    public Vector3 moveVector;
+
+    //Dash Variables
+    public float dashLength = .25f;
+    public float dashCooldown = .5f;
+    public float dashSpeed = 5f;
+
 
     //Movement is handled in fixed update for collision
     private void FixedUpdate() 
     {
-        // Eventually, this state dependency should be handled in a player move state object
-        if (actor.state != ActorState.ATTACKING_STATE
-            && actor.state != ActorState.STUNNED_STATE) //Only allow movement when standing idle or mid walking.
-        {
-            actor.rigidBody.MovePosition(transform.position + (moveVector * speed * Time.deltaTime));
-        }
+        if (actor.state == ActorState.DODGE_STATE)
+            actor.rigidBody.MovePosition(transform.position + (moveVector * dashSpeed * Time.deltaTime));
+        else
+            actor.rigidBody.MovePosition(transform.position + (moveVector * walkSpeed * Time.deltaTime));
     }
 
     //Updates the moveVector that fixedUpdate checks.
@@ -40,11 +44,19 @@ public class PlayerMove : PlayerComponent
         StartCoroutine(DashCoroutine());
     }
 
+    // Design notes on this...
+    // Right now the speed is static and the dodge is fast and snappy. 
+    // Should experiment with possibly using a curve to handle the speed and have it start slow, speed up, and slow down again like a dark souls dodge roll.
+    // Also don't like how we handle iFrames in here. We should probably move it back into the actor somehow.
     IEnumerator DashCoroutine()
     {
-        Debug.Log("Test");
         actor.state = ActorState.DODGE_STATE;
-        yield return new WaitForSeconds(3);
+        moveVector = transform.forward;
+        Physics.IgnoreLayerCollision(3, 8, true);
+        yield return new WaitForSeconds(dashLength);
+        moveVector = Vector3.zero;
+        Physics.IgnoreLayerCollision(3, 8, false);
+        yield return new WaitForSeconds(dashCooldown);
         actor.state = ActorState.IDLE_STATE;
     }
 }

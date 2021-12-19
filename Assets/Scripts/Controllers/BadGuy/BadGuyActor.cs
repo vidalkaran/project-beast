@@ -6,9 +6,10 @@ public class BadGuyActor : Actor2D
 {
     //To refactor out at some point
     public GameObject HitEmitterPrefab;  //Should outsource this to an Object Pool later for performance.
+    public AttackData attackData;  //Need to eventually make this a unique attack for this enemy.
 
     //Components
-    BadGuyCombat badGuyCombat;
+    BadGuyCombat badGuyCombat; 
 
     public float speed = 3;
 
@@ -57,18 +58,14 @@ public class BadGuyActor : Actor2D
         }
     }
 
-    private void OnCollisionEnter(Collision c)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (c.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             state = ActorState.ATTACKING_STATE;
 
-            Instantiate(HitEmitterPrefab, c.transform.position, c.transform.rotation);
-            c.transform.LookAt(transform);
-            c.gameObject.GetComponent<Rigidbody>().AddForce(transform.up * 100); //Hard code 100 for now
-            c.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 100f);
-            c.gameObject.GetComponent<Actor2D>().backLight.IntensifyLight(.5f, 5f);
-            c.gameObject.GetComponent<PlayerActor>().TakeDamage(1);
+            collision.gameObject.GetComponent<PlayerCamera>().ShakeScreen(attackData.shakeScreenMod);
+            collision.gameObject.GetComponent<PlayerActor>().ResolveAttack(this.gameObject, attackData);
         }
     }
 }

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea3b6144cd6fc448b0ea142984eda09, type: 3}
+  m_Name: EnemyAttack
+  m_EditorClassIdentifier: 
+  HitEmitterPrefab: {fileID: 0}
+  hitboxPrefab: {fileID: 0}
+  attackDamage: 0
+  attackForce: 0
+  attackWindup: 0
+  attackCooldown: 0
+  intensifyTime: 0
+  intensifyMod: 0
+  shakeScreenMod: 0

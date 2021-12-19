@@ -48,6 +48,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -114,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064d33e2bb49744a8dbe61cb19fa90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  actor: {fileID: 0}
   spriteOrientation: 0
 --- !u!1 &2447214371403006895
 GameObject:
@@ -163,6 +164,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -187,6 +189,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2447214371403006892
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -209,7 +212,7 @@ GameObject:
   - component: {fileID: 7050923570157033048}
   m_Layer: 8
   m_Name: Badguy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,9 +285,11 @@ MonoBehaviour:
   orientation: 0
   state: 0
   rigidBody: {fileID: 0}
+  health: 0
   target: {fileID: 0}
   HitEmitterPrefab: {fileID: 6610614278519045816, guid: 37348d217e00efe4385630c536ae89e7,
     type: 3}
+  attackData: {fileID: 11400000, guid: 6bbc9733a5925f34d8c4dffb542c6aef, type: 2}
   speed: 3
 --- !u!1 &8244844546670610751
 GameObject:
@@ -342,6 +347,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -366,6 +372,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5498967194595794245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -393,6 +400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -408,6 +420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -420,16 +437,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4356910085653976010, guid: 28dfeb4e74f97964098c4f4e1551bcd9,
         type: 3}

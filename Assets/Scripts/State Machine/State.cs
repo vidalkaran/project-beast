@@ -6,7 +6,6 @@ public abstract class State : ScriptableObject
 {
     public ExecutionState executionState { get; protected set; }
     public StateEnum stateName;
-    public Actor2D actor;
 
     public virtual bool EnterState()
     {

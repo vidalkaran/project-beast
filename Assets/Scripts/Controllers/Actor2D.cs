@@ -49,10 +49,38 @@ public class Actor2D : MonoBehaviour
 
         if (health <= 0)
         {
-            Debug.Log(gameObject.name + " has died");
+            Debug.Log(gameObject.name + " has died"); //Send this to a notification center at some point
             Destroy(gameObject);
         }
     }
+
+    public void ResolveAttack(GameObject enemyActor, AttackData enemyAttack)
+    {
+        if (state != ActorState.DODGE_STATE)
+        {
+            StopCoroutine("Stunned");
+
+            Instantiate(enemyAttack.HitEmitterPrefab, transform.position, transform.rotation);
+
+            //Physics
+            rigidBody.AddForce(enemyActor.transform.forward * enemyAttack.attackForce);
+            rigidBody.AddForce(enemyActor.transform.up * 100); //Hard code 100 for now
+            transform.LookAt(enemyActor.transform);
+
+            //Enemy
+            backLight.IntensifyLight(enemyAttack.intensifyTime, enemyAttack.intensifyMod);
+
+            health -= enemyAttack.attackDamage;
+            state = ActorState.STUNNED_STATE;
+
+            if (health <= 0)
+            {
+                Debug.Log(gameObject.name + " has died"); //Send this to a notification center at some point
+                Destroy(gameObject);
+            }
+        }
+    }
+
 
     public IEnumerator Stunned()
     {

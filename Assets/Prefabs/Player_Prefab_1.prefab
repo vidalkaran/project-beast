@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3319936275978175906}
   - component: {fileID: 3319936275978175904}
   - component: {fileID: 3319936275978175907}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3319936276157041711}
   - component: {fileID: 3319936276157041710}
   - component: {fileID: 3319936276157041697}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064d33e2bb49744a8dbe61cb19fa90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 3319936276526842106}
+  actor: {fileID: 0}
   spriteOrientation: 0
 --- !u!1 &3319936276181481360
 GameObject:
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 3319936276181481372}
   - component: {fileID: 3319936276181481375}
   - component: {fileID: 3319936276181481374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DebugCollision(Disable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,9 +308,9 @@ GameObject:
   - component: {fileID: 3319936276526842109}
   - component: {fileID: 3319936276526842108}
   - component: {fileID: 3319936276526842111}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player_Prefab_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -400,7 +400,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1beb22eb4e4f341a1343533fe5364d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  walkSpeed: 2
+  moveVector: {x: 0, y: 0, z: 0}
+  dashLength: 0.25
+  dashCooldown: 0.5
+  dashSpeed: 3
 --- !u!114 &3319936276526842108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce81d4e5a1e550c40b858572351764b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 0.2
 --- !u!1 &3319936277029490776
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3319936277029490777}
   - component: {fileID: 3319936277029490758}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ActorBackLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3319936277271751345}
   - component: {fileID: 3319936277271751358}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LightSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
