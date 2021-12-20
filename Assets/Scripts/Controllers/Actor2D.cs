@@ -23,11 +23,10 @@ public class Actor2D : MonoBehaviour
     [HideInInspector] public Orientation orientation;
     [HideInInspector] public Rigidbody rigidBody;
 
+    //Variables
     public ActorState state;
     public float health = 0f;
-
-    //temp
-    public Transform target;
+    public Transform target; // This should be moved up to the enemy class at some point... need to consider making resolve attack more virtual somehow.
 
     public virtual void Awake()
     {
@@ -43,6 +42,8 @@ public class Actor2D : MonoBehaviour
     //This should be virtual and implemented by the higher order class, ie the PlayerActor or EnemyActor...
     public void ResolveAttack(GameObject enemyActor, AttackData enemyAttack)
     {
+        target = enemyActor.transform;
+
         if (state == ActorState.PARRY_STATE)
         {
             //This is... horrible... but temporary
