@@ -10,11 +10,7 @@ public class PlayerCombat : PlayerComponent
 
     private void Start()
     {
-        //Set up mesh based on scriptable object
-        GameObject hitboxGameObject = Instantiate(basicAttack.hitboxPrefab, new Vector3(0, 0, .5f), Quaternion.identity);
-        hitboxGameObject.transform.SetParent(this.gameObject.transform, false);
-        hitboxGameObject.GetComponent<MeshRenderer>().enabled = false; //Disabling debug renderer
-        hitboxCollider = hitboxGameObject.GetComponent<BoxCollider>();
+        hitboxCollider = basicAttack.SetupCollider(transform);
     }
 
     public void Attack()
@@ -58,6 +54,7 @@ public class PlayerCombat : PlayerComponent
         actor.state = ActorState.IDLE_STATE;
     }
 
+    //The parry coroutine.
     IEnumerator ParryCoroutine()
     {
         actor.state = ActorState.PARRY_STATE;

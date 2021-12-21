@@ -17,4 +17,12 @@ public class AttackData : ScriptableObject
     public float shakeScreenMod; //How much to shake the screen
     // Animation // Not sure how to do this yet but this should know the animation to use
     //public AttackType attackType; //The damage type. To be implemented
+
+    public Collider SetupCollider(Transform owner)
+    {
+        GameObject hitboxGameObject = Instantiate(hitboxPrefab, new Vector3(0, 0, .5f), Quaternion.identity);
+        hitboxGameObject.transform.SetParent(owner, false);
+        hitboxGameObject.GetComponent<MeshRenderer>().enabled = false; //Disabling debug renderer
+        return hitboxGameObject.GetComponent<BoxCollider>();
+    }
 }

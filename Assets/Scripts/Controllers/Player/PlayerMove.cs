@@ -63,10 +63,10 @@ public class PlayerMove : PlayerComponent
         dashEffect.transform.rotation = transform.rotation;
         dashEffect.Play();
         moveVector = transform.forward;
-        Physics.IgnoreLayerCollision(3, 8, true);
+        Physics.IgnoreLayerCollision(3, 8, true); // For iFrames
         yield return new WaitForSeconds(dashLength);
         moveVector = Vector3.zero;
-        Physics.IgnoreLayerCollision(3, 8, false);
+        Physics.IgnoreLayerCollision(3, 8, false); // For iFrames
         yield return new WaitForSeconds(dashCooldown);
         dashEffect.Stop();
         actor.state = ActorState.IDLE_STATE;
