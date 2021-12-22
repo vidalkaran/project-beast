@@ -11,7 +11,8 @@ public class BadGuyActor : Actor2D
     //Internal AI Data
     public float speed = .75f;
 
-    private GameObject aiWaypoint;
+    // private GameObject aiWaypoint;
+    public Vector3 targetDestination;
     private Vector3 randomVector;
     private Vector3 lookPos;
     public float distance;
@@ -20,13 +21,9 @@ public class BadGuyActor : Actor2D
     {
         base.Awake();
         rigidBody = GetComponent<Rigidbody>();
-        rigidBody = GetComponent<Rigidbody>();
-        // target = GameObject.FindWithTag("Player").transform;
         health = 2;
         state = ActorState.SENTRY_STATE; // Default state could be an input var. 
-        aiWaypoint = Instantiate(Resources.Load<GameObject>("Prefabs/AIWaypoint"), Vector3.zero, Quaternion.identity); // Need to investigate possibility of not making this a GameObject...
-        aiWaypoint.transform.position = transform.position;
-        target = aiWaypoint.transform;
+        targetDestination = transform.position;
     }
 
     void Update()
@@ -35,27 +32,24 @@ public class BadGuyActor : Actor2D
         {
             case ActorState.IDLE_STATE:
             {
-                Debug.Log("Entering IDLE state");
                 break;
             }
             case ActorState.WANDER_STATE:
             {
-                Debug.Log("Entering WANDER state");
-                //If we are at the targetPos, switch back to sentry
-                    distance = Vector3.Distance(transform.position, target.transform.position);
+                distance = Vector3.Distance(transform.position, targetDestination);
                 if (distance < .3f)
                     state = ActorState.SENTRY_STATE;
                 break;
             }
             case ActorState.SENTRY_STATE:
             {
-                Debug.Log("Entering SENTRY state");
                 StartCoroutine(SentryDelay());
                 state = ActorState.IDLE_STATE;
                 break;
             }
             case ActorState.STUNNED_STATE:
             {
+                StopCoroutine(EnemyStunned());
                 StartCoroutine(EnemyStunned());
                 break;
             }
@@ -63,6 +57,8 @@ public class BadGuyActor : Actor2D
             {
                 if (target == null)
                     state = ActorState.WANDER_STATE;
+                else
+                    targetDestination = target.position;
                 break;
             }
         }
@@ -72,11 +68,11 @@ public class BadGuyActor : Actor2D
     {
         if (state == ActorState.WANDER_STATE || state == ActorState.CHASE_STATE)
         {
-            lookPos.x = target.transform.position.x;
-            lookPos.y = transform.position.y;
-            lookPos.z = target.transform.position.z;
+            lookPos.x = targetDestination.x;
+            lookPos.y = targetDestination.y;
+            lookPos.z = targetDestination.z;
             transform.LookAt(lookPos);
-            rigidBody.MovePosition(transform.position + (transform.forward * speed * Time.deltaTime));
+            rigidBody.MovePosition(transform.position + (speed * Time.deltaTime * transform.forward));
         }
     }
 
@@ -94,16 +90,15 @@ public class BadGuyActor : Actor2D
     {
         yield return new WaitForSeconds(.75f);
         state = ActorState.CHASE_STATE;
-        StopCoroutine("Stunned");
     }
 
     public IEnumerator SentryDelay()
     {
-        yield return new WaitForSeconds(Random.Range(1,5));
-        randomVector.x = target.transform.position.x + Random.Range(-1f, 1f);
-        randomVector.y = target.transform.position.y;
-        randomVector.z = target.transform.position.z + Random.Range(-1f, 1f);
-        target.transform.position = randomVector;
+        yield return new WaitForSeconds(Random.Range(.05f,3));
+        randomVector.x = targetDestination.x + Random.Range(-1f, 1f);
+        randomVector.y = transform.position.y;
+        randomVector.z = targetDestination.z + Random.Range(-1f, 1f);
+        targetDestination = randomVector;
         state = ActorState.WANDER_STATE;
     }
 
