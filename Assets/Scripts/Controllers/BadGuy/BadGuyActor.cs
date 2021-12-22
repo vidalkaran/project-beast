@@ -35,25 +35,23 @@ public class BadGuyActor : Actor2D
         {
             case ActorState.IDLE_STATE:
             {
-                //nothing yet
+                Debug.Log("Entering IDLE state");
                 break;
             }
             case ActorState.WANDER_STATE:
             {
+                Debug.Log("Entering WANDER state");
                 //If we are at the targetPos, switch back to sentry
-                distance = Vector3.Distance(transform.position, target.transform.position);
-                if (distance < 1f)
+                    distance = Vector3.Distance(transform.position, target.transform.position);
+                if (distance < .3f)
                     state = ActorState.SENTRY_STATE;
                 break;
             }
             case ActorState.SENTRY_STATE:
             {
-                // Randomness Range can be a variable at some point.
-                randomVector.x = target.transform.position.x + Random.Range(-.5f, .5f);
-                randomVector.y = target.transform.position.y;
-                randomVector.z = target.transform.position.z + Random.Range(-.5f, .5f);
-                target.transform.position = randomVector;
-                state = ActorState.WANDER_STATE;
+                Debug.Log("Entering SENTRY state");
+                StartCoroutine(SentryDelay());
+                state = ActorState.IDLE_STATE;
                 break;
             }
             case ActorState.STUNNED_STATE:
@@ -98,4 +96,15 @@ public class BadGuyActor : Actor2D
         state = ActorState.CHASE_STATE;
         StopCoroutine("Stunned");
     }
+
+    public IEnumerator SentryDelay()
+    {
+        yield return new WaitForSeconds(Random.Range(1,5));
+        randomVector.x = target.transform.position.x + Random.Range(-1f, 1f);
+        randomVector.y = target.transform.position.y;
+        randomVector.z = target.transform.position.z + Random.Range(-1f, 1f);
+        target.transform.position = randomVector;
+        state = ActorState.WANDER_STATE;
+    }
+
 }
