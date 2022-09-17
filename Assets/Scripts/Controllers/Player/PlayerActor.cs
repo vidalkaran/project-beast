@@ -36,7 +36,7 @@ public class PlayerActor : Actor2D
             case ActorState.STUNNED_STATE:
             {
                 playerMove.moveVector = Vector3.zero;
-                StartCoroutine("Stunned"); //Returns to idle state when done.
+                StartCoroutine(Stunned()); //Returns to idle state when done.
                 break;
             }
             case ActorState.ATTACKING_STATE:
